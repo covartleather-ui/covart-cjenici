@@ -11,7 +11,7 @@ Official public machine-readable price-list repository for **Covart, obrt za pro
 - `scripts/generate_price_lists.py` generates and validates the datasets.
 - `.github/workflows/publish-price-lists.yml` performs scheduled publication.
 
-The publication workflow uses Europe/Zagreb local time and is designed to publish at about **07:15**, with a later fallback slot if the primary scheduled run did not complete. It can also be started manually with **Run workflow**, which is useful after a service-price change.
+Daily scheduling is handled outside GitHub Actions by the connected automation. The GitHub Actions workflow is intentionally **manual-only** as a fallback, so it cannot fail on a missing repository secret. It can be enabled later after the Shopify Admin token is stored as a GitHub Actions secret.
 
 The repository intentionally keeps more than 30 days of archive availability (40-day retention buffer in the generator).
 

@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 import csv
-import io
 import json
 import os
-import re
 import shutil
 import sys
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from xml.etree import ElementTree as ET
@@ -164,8 +162,7 @@ def validate_csv(path, expected_rows, header):
         rows = list(csv.DictReader(f, delimiter=";"))
     if len(rows) != expected_rows:
         stop(f"{path}: expected {expected_rows} rows, got {len(rows)}")
-    if list(rows[0].keys()) != header if rows else header:
-        stop(f"{path}: unexpected CSV header")
+    if not rows:\n        stop(f"{path}: CSV contains no data rows")\n    if list(rows[0].keys()) != header:\n        stop(f"{path}: unexpected CSV header")
 
 def validate_xml(path, item_name, expected_rows):
     tree = ET.parse(path)

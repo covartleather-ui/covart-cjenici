@@ -2,14 +2,6 @@ name: Publish Covart price lists
 
 on:
   workflow_dispatch:
-  schedule:
-    # Europe/Zagreb is UTC+2 in summer and UTC+1 in winter.
-    # Both UTC slots are scheduled; the generator runs only the slot matching
-    # the current Zagreb offset. A second slot 25 minutes later is a fallback.
-    - cron: "15 5 * * *"
-    - cron: "40 5 * * *"
-    - cron: "15 6 * * *"
-    - cron: "40 6 * * *"
 
 permissions:
   contents: write
@@ -31,7 +23,7 @@ jobs:
           SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
           SHOPIFY_API_VERSION: "2026-07"
           GITHUB_EVENT_NAME: ${{ github.event_name }}
-          SCHEDULE_CRON: ${{ github.event.schedule }}
+          SCHEDULE_CRON: ""
         run: python3 scripts/generate_price_lists.py
 
       - name: Commit publication
