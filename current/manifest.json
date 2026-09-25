@@ -1,0 +1,19 @@
+{
+  "merchant": "Covart, obrt za proizvodnju i usluge",
+  "published_at": "2026-09-25T18:08:10+02:00",
+  "storage_sequence": "000002",
+  "currency": "EUR",
+  "files": {
+    "webshop_csv": "current/webshop_jarcec-2-10298-igrisce_WEB01_000002_20260925-1808_proizvodi.csv",
+    "webshop_xml": "current/webshop_jarcec-2-10298-igrisce_WEB01_000002_20260925-1808_proizvodi.xml",
+    "workshop_csv": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000002_20260925-1808_proizvodi.csv",
+    "workshop_xml": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000002_20260925-1808_proizvodi.xml",
+    "services_csv": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000002_20260925-1808_usluge.csv",
+    "services_xml": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000002_20260925-1808_usluge.xml"
+  },
+  "counts": {
+    "webshop_products": 95,
+    "workshop_products": 106,
+    "services_and_delivery": 44
+  }
+}
