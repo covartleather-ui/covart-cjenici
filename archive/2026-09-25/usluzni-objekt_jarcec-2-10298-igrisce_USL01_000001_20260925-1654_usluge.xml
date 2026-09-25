@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cjenik_usluga trgovac="Covart, obrt za proizvodnju i usluge" objekt="Uslužni objekt" adresa="Jarčec 2, 10298 Igrišće" oznaka_objekta="USL01" broj_pohrane="000001" datum_vrijeme="2026-09-25T16:54:00+02:00" valuta="EUR">
+  <usluga>
+    <naziv_usluge>Zamjena kože remena</naziv_usluge>
+    <maloprodajna_cijena>25.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>25.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Zamjena kopče ili metalnog okova</naziv_usluge>
+    <maloprodajna_cijena>12.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>12.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Postavljanje ili zamjena zakovica, očica, drukera i ostalih okova</naziv_usluge>
+    <maloprodajna_cijena>3.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>3.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Popravak ili obnova kožnog proizvoda</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Prilagodba postojećeg proizvoda</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Rezanje ili krojenje kože</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Lasersko rezanje</naziv_usluge>
+    <maloprodajna_cijena>0.50</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>0.50</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Stanjivanje kože</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada rupa ili perforacija</naziv_usluge>
+    <maloprodajna_cijena>1.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>1.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada kanala za šav</naziv_usluge>
+    <maloprodajna_cijena>4.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>4.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Oblikovanje ili formiranje kože</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada kroja ili šablone</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Lijepljenje ili spajanje slojeva kože</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada ili postavljanje podstave</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada gajke ili petlje</naziv_usluge>
+    <maloprodajna_cijena>6.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>6.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Ručno šivanje drška remena</naziv_usluge>
+    <maloprodajna_cijena>8.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>8.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Strojno šivanje drška remena</naziv_usluge>
+    <maloprodajna_cijena>4.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>4.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Ručno šivanje trčećim šavom</naziv_usluge>
+    <maloprodajna_cijena>32.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>24.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Ručno šivanje sedlarskim vezom</naziv_usluge>
+    <maloprodajna_cijena>45.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>30.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Strojno šivanje</naziv_usluge>
+    <maloprodajna_cijena>10.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>10.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Brušenje ili priprema rubova</naziv_usluge>
+    <maloprodajna_cijena>4.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>4.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Zaobljivanje rubova</naziv_usluge>
+    <maloprodajna_cijena>3.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>3.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada ukrasne crte uz rub</naziv_usluge>
+    <maloprodajna_cijena>3.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>3.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Bojanje rubova</naziv_usluge>
+    <maloprodajna_cijena>8.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>8.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Poliranje rubova</naziv_usluge>
+    <maloprodajna_cijena>6.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>6.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Završna obrada ili poliranje rubova voskom</naziv_usluge>
+    <maloprodajna_cijena>8.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>8.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Bojanje kože</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Impregnacija ili njega kože</naziv_usluge>
+    <maloprodajna_cijena>10.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>10.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Završna obrada proizvoda</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Utiskivanje teksta ili inicijala</naziv_usluge>
+    <maloprodajna_cijena>0.35</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>0.35</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Bojanje utisnutog teksta</naziv_usluge>
+    <maloprodajna_cijena>0.15</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>0.15</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Lasersko graviranje</naziv_usluge>
+    <maloprodajna_cijena>0.50</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>0.50</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Dizajn ili priprema gravure</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Graviranje prema gotovoj grafici kupca</naziv_usluge>
+    <maloprodajna_cijena>5.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>5.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Dizajn proizvoda</naziv_usluge>
+    <maloprodajna_cijena>25.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Izrada prototipa ili razvoj proizvoda</naziv_usluge>
+    <maloprodajna_cijena>25.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Unikatna izrada po narudžbi</naziv_usluge>
+    <maloprodajna_cijena>22.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Kožarski ili proizvodni rad po satu</naziv_usluge>
+    <maloprodajna_cijena>18.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>18.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Poklon pakiranje</naziv_usluge>
+    <maloprodajna_cijena>5.15</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>5.15</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Kurirska dostava i pakiranje S</naziv_usluge>
+    <maloprodajna_cijena>8.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>8.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Kurirska dostava i pakiranje M</naziv_usluge>
+    <maloprodajna_cijena>12.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>12.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Kurirska dostava i pakiranje L</naziv_usluge>
+    <maloprodajna_cijena>15.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>15.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Kurirska dostava i pakiranje XL</naziv_usluge>
+    <maloprodajna_cijena>20.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>20.00</sidrena_cijena>
+  </usluga>
+  <usluga>
+    <naziv_usluge>Vlastita dostava proizvoda po kilometru</naziv_usluge>
+    <maloprodajna_cijena>1.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <sidrena_cijena>1.00</sidrena_cijena>
+  </usluga>
+</cjenik_usluga>
