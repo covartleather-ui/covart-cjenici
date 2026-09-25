@@ -1,0 +1,48 @@
+name: Publish Covart price lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Europe/Zagreb is UTC+2 in summer and UTC+1 in winter.
+    # Both UTC slots are scheduled; the generator runs only the slot matching
+    # the current Zagreb offset. A second slot 25 minutes later is a fallback.
+    - cron: "15 5 * * *"
+    - cron: "40 5 * * *"
+    - cron: "15 6 * * *"
+    - cron: "40 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: covart-price-list-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate and validate price lists
+        env:
+          SHOPIFY_SHOP: 6ffdpq-40.myshopify.com
+          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+          SHOPIFY_API_VERSION: "2026-07"
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
+        run: python3 scripts/generate_price_lists.py
+
+      - name: Commit publication
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No publication changes to commit."
+            exit 0
+          fi
+          git config user.name "covart-cjenici-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add current archive state.json
+          git commit -m "Publish Covart price lists $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
