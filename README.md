@@ -11,7 +11,7 @@ Official public machine-readable price-list repository for **Covart, obrt za pro
 - `scripts/generate_price_lists.py` generates and validates the datasets.
 - `.github/workflows/publish-price-lists.yml` performs scheduled publication.
 
-Daily scheduling is handled outside GitHub Actions by the connected automation. A separate hourly change watch publishes again only when relevant Shopify price-list data changes. The GitHub Actions workflow is intentionally **manual-only** as a fallback.
+GitHub Actions generates and commits the daily publication at **07:15 Europe/Zagreb**. It has both 05:15 and 06:15 UTC cron entries; the generator ignores the inactive daylight-saving slot and skips a duplicate scheduled publication on the same local date. A separate connected automation starts the Shopify Files, redirects and `/pages/cjenik` synchronization after the GitHub commit. The hourly Shopify change watch is separate from this daily schedule.
 
 The repository intentionally keeps more than 30 days of archive availability (40-day retention buffer in the generator).
 
