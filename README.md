@@ -29,6 +29,8 @@ No Shopify credential or API token is stored in this public repository. The work
 
 `SHOPIFY_ADMIN_ACCESS_TOKEN`
 
+Set this as an **Actions repository secret** before running the workflow. Without it, generation exits before changing `current/`, `archive/` or `state.json`. Do not put the token in this public repository or in a commit.
+
 The Shopify shop domain is non-secret and is configured as `6ffdpq-40.myshopify.com`.
 
 Initial publication: **2026-09-25**, storage sequence **000001**.
