@@ -2,15 +2,10 @@ name: Publish Covart price lists
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - README.md
   schedule:
     # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
     - cron: "15 5 * * *"
     - cron: "15 6 * * *"
-    # One-off recovery slot for the missed 2026-09-26 publication; remove after run.
-    - cron: "35 5 * * *"
 
 permissions:
   contents: write
