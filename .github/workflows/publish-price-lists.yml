@@ -2,6 +2,9 @@ name: Publish Covart price lists
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - README.md
   schedule:
     # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
     - cron: "15 5 * * *"
