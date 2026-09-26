@@ -2,6 +2,10 @@ name: Publish Covart price lists
 
 on:
   workflow_dispatch:
+  schedule:
+    # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
+    - cron: "15 5 * * *"
+    - cron: "15 6 * * *"
 
 permissions:
   contents: write
@@ -23,18 +27,18 @@ jobs:
           SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
           SHOPIFY_API_VERSION: "2026-07"
           GITHUB_EVENT_NAME: ${{ github.event_name }}
-          SCHEDULE_CRON: ""
+          SCHEDULE_CRON: ${{ github.event.schedule }}
         run: python3 scripts/generate_price_lists.py
 
       - name: Commit publication
         shell: bash
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
+          git add -A current archive state.json
+          if git diff --cached --quiet; then
             echo "No publication changes to commit."
             exit 0
           fi
           git config user.name "covart-cjenici-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add current archive state.json
           git commit -m "Publish Covart price lists $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push
