@@ -25,11 +25,12 @@ CSV and XML versions of each data set are generated from Shopify structured data
 
 ## Security
 
-No Shopify credential or API token is stored in this public repository. The workflow expects the GitHub Actions repository secret:
+No Shopify credential or API token is stored in this public repository. For an app created in Shopify Dev Dashboard, configure these **Actions repository secrets**:
 
-`SHOPIFY_ADMIN_ACCESS_TOKEN`
+- `SHOPIFY_CLIENT_ID`
+- `SHOPIFY_CLIENT_SECRET`
 
-Set this as an **Actions repository secret** before running the workflow. Without it, generation exits before changing `current/`, `archive/` or `state.json`. Do not put the token in this public repository or in a commit.
+The workflow exchanges them for a fresh Admin API access token at each run. A legacy app with a long-lived token may instead use the single secret `SHOPIFY_ADMIN_ACCESS_TOKEN`. Without either complete credential set, generation exits before changing `current/`, `archive/` or `state.json`. Never commit credentials to this public repository.
 
 The Shopify shop domain is non-secret and is configured as `6ffdpq-40.myshopify.com`.
 
