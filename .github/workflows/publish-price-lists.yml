@@ -6,6 +6,8 @@ on:
     # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
     - cron: "15 5 * * *"
     - cron: "15 6 * * *"
+    # Check price-list data hourly; publish only when rows changed.
+    - cron: "45 * * * *"
 
 permissions:
   contents: write
