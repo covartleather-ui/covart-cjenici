@@ -159,7 +159,7 @@ def graphql():
     return result["data"]
 
 def is_valid_schedule(now):
-    if EVENT_NAME != "schedule":
+    if EVENT_NAME != "schedule" or SCHEDULE_CRON == "45 * * * *":
         return True
     offset = int(now.utcoffset().total_seconds() // 3600)
     valid_hours = {2: {"5"}, 1: {"6"}}
@@ -204,6 +204,21 @@ def validate_xml(path, item_name, expected_rows):
     if count != expected_rows:
         stop(f"{path}: expected {expected_rows} XML items, got {count}")
 
+def current_rows_match(datasets):
+    try:
+        manifest = json.loads((CURRENT / "manifest.json").read_text(encoding="utf-8"))
+        for key, expected in datasets.items():
+            path = ROOT / manifest["files"][key]
+            if path.parent != CURRENT:
+                return False
+            with path.open("r", encoding="utf-8-sig", newline="") as f:
+                actual = list(csv.DictReader(f, delimiter=";"))
+            if actual != expected:
+                return False
+        return True
+    except (OSError, KeyError, ValueError, csv.Error, json.JSONDecodeError):
+        return False
+
 def clean_current():
     CURRENT.mkdir(parents=True, exist_ok=True)
     for p in CURRENT.iterdir():
@@ -232,7 +247,7 @@ def main():
 
     state = load_state()
     today = now.date().isoformat()
-    if EVENT_NAME == "schedule" and state.get("last_date") == today:
+    if EVENT_NAME == "schedule" and SCHEDULE_CRON != "45 * * * *" and state.get("last_date") == today:
         print(f"Today's publication already exists ({today}); fallback run skipped.")
         return
 
@@ -310,6 +325,14 @@ def main():
         stop("Source returned an empty required dataset")
 
     workshop = products + workshop_only
+    if EVENT_NAME == "schedule" and SCHEDULE_CRON == "45 * * * *" and current_rows_match({
+        "webshop_csv": products,
+        "workshop_csv": workshop,
+        "services_csv": services,
+    }):
+        print("No relevant Shopify price-list changes; hourly publication skipped.")
+        return
+
     sequence = int(state.get("last_sequence", 0)) + 1
     seq = f"{sequence:06d}"
     stamp = now.strftime("%Y%m%d-%H%M")
