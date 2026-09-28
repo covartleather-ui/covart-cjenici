@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" objekt="Webshop" adresa="Jarčec 2, 10298 Igrišće" oznaka_objekta="WEB01" broj_pohrane="000002" datum_vrijeme="2026-09-25T18:08:10+02:00" valuta="EUR">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000003" datum_vrijeme="2026-09-28T10:25:15+02:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -8,7 +8,7 @@
     <cijena_za_jedinicu_mjere>55.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>55.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>55.00</sidrena_cijena>
     <barkod>COV0000055</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -21,7 +21,7 @@
     <cijena_za_jedinicu_mjere>58.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>58.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>58.00</sidrena_cijena>
     <barkod>COV0000061</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -34,7 +34,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000072</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -73,7 +73,7 @@
     <cijena_za_jedinicu_mjere>50.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>50.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>50.00</sidrena_cijena>
     <barkod>COV0000056</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -138,7 +138,7 @@
     <cijena_za_jedinicu_mjere>58.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>58.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>58.00</sidrena_cijena>
     <barkod>COV0000064</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -151,7 +151,7 @@
     <cijena_za_jedinicu_mjere>50.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>50.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>50.00</sidrena_cijena>
     <barkod>COV0000057</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -164,7 +164,7 @@
     <cijena_za_jedinicu_mjere>50.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>50.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>50.00</sidrena_cijena>
     <barkod>COV0000058</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -190,7 +190,7 @@
     <cijena_za_jedinicu_mjere>55.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>55.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>55.00</sidrena_cijena>
     <barkod>COV0000065</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -203,7 +203,7 @@
     <cijena_za_jedinicu_mjere>55.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>55.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>55.00</sidrena_cijena>
     <barkod>COV0000066</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -216,7 +216,7 @@
     <cijena_za_jedinicu_mjere>30.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>30.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>30.00</sidrena_cijena>
     <barkod>COV0000051</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -229,7 +229,7 @@
     <cijena_za_jedinicu_mjere>37.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>37.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>37.00</sidrena_cijena>
     <barkod>COV0000037</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -242,7 +242,7 @@
     <cijena_za_jedinicu_mjere>26.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>26.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>26.00</sidrena_cijena>
     <barkod>COV0000045</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -255,7 +255,7 @@
     <cijena_za_jedinicu_mjere>26.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>26.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>26.00</sidrena_cijena>
     <barkod>COV0000044</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -268,7 +268,7 @@
     <cijena_za_jedinicu_mjere>26.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>26.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>26.00</sidrena_cijena>
     <barkod>COV0000046</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -281,7 +281,7 @@
     <cijena_za_jedinicu_mjere>57.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>57.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>57.00</sidrena_cijena>
     <barkod>COV0000062</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -294,7 +294,7 @@
     <cijena_za_jedinicu_mjere>55.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>55.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>55.00</sidrena_cijena>
     <barkod>COV0000039</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -307,7 +307,7 @@
     <cijena_za_jedinicu_mjere>47.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>47.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>47.00</sidrena_cijena>
     <barkod>COV0000077</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -320,7 +320,7 @@
     <cijena_za_jedinicu_mjere>50.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>50.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>50.00</sidrena_cijena>
     <barkod>COV0000060</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -333,7 +333,7 @@
     <cijena_za_jedinicu_mjere>45.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>45.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>45.00</sidrena_cijena>
     <barkod>COV0000054</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -346,7 +346,7 @@
     <cijena_za_jedinicu_mjere>35.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>35.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>35.00</sidrena_cijena>
     <barkod>COV0000042</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -359,7 +359,7 @@
     <cijena_za_jedinicu_mjere>55.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>55.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>55.00</sidrena_cijena>
     <barkod>COV0000059</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -372,7 +372,7 @@
     <cijena_za_jedinicu_mjere>48.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>48.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>48.00</sidrena_cijena>
     <barkod>COV0000085</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -385,7 +385,7 @@
     <cijena_za_jedinicu_mjere>89.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>89.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>89.00</sidrena_cijena>
     <barkod>COV0000070</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -398,7 +398,7 @@
     <cijena_za_jedinicu_mjere>85.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>85.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>85.00</sidrena_cijena>
     <barkod>COV0000071</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -411,7 +411,7 @@
     <cijena_za_jedinicu_mjere>85.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>85.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>85.00</sidrena_cijena>
     <barkod>COV0000069</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -424,7 +424,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000075</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -437,7 +437,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000073</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -450,7 +450,7 @@
     <cijena_za_jedinicu_mjere>82.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>82.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>82.00</sidrena_cijena>
     <barkod>COV0000074</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -489,7 +489,7 @@
     <cijena_za_jedinicu_mjere>32.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>32.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>32.00</sidrena_cijena>
     <barkod>COV0000041</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -502,7 +502,7 @@
     <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>60.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>60.00</sidrena_cijena>
     <barkod>COV0000082</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -515,7 +515,7 @@
     <cijena_za_jedinicu_mjere>53.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>53.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>53.00</sidrena_cijena>
     <barkod>COV0000040</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -528,7 +528,7 @@
     <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>60.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>60.00</sidrena_cijena>
     <barkod>COV0000048</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -541,7 +541,7 @@
     <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>60.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>60.00</sidrena_cijena>
     <barkod>COV0000047</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -554,7 +554,7 @@
     <cijena_za_jedinicu_mjere>63.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>63.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>63.00</sidrena_cijena>
     <barkod>COV0000043</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -567,7 +567,7 @@
     <cijena_za_jedinicu_mjere>95.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>95.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>95.00</sidrena_cijena>
     <barkod>COV0000038</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -580,7 +580,7 @@
     <cijena_za_jedinicu_mjere>95.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>95.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>95.00</sidrena_cijena>
     <barkod>COV0000053</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -593,7 +593,7 @@
     <cijena_za_jedinicu_mjere>95.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>95.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>95.00</sidrena_cijena>
     <barkod>COV0000052</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -606,7 +606,7 @@
     <cijena_za_jedinicu_mjere>63.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>63.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>63.00</sidrena_cijena>
     <barkod>COV0000025</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -619,7 +619,7 @@
     <cijena_za_jedinicu_mjere>63.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>63.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>63.00</sidrena_cijena>
     <barkod>COV0000026</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -632,7 +632,7 @@
     <cijena_za_jedinicu_mjere>63.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>63.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>63.00</sidrena_cijena>
     <barkod>COV0000024</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -645,7 +645,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000023</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -658,7 +658,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000022</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -671,7 +671,7 @@
     <cijena_za_jedinicu_mjere>75.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>75.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>75.00</sidrena_cijena>
     <barkod>COV0000021</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -684,7 +684,7 @@
     <cijena_za_jedinicu_mjere>40.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>40.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>40.00</sidrena_cijena>
     <barkod>COV0000087</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -697,7 +697,7 @@
     <cijena_za_jedinicu_mjere>30.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>30.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>30.00</sidrena_cijena>
     <barkod>COV0000027</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -710,7 +710,7 @@
     <cijena_za_jedinicu_mjere>40.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>40.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>40.00</sidrena_cijena>
     <barkod>COV0000017</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -723,7 +723,7 @@
     <cijena_za_jedinicu_mjere>87.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>87.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>87.00</sidrena_cijena>
     <barkod>COV0000084</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -736,7 +736,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000006</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -749,7 +749,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000007</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -762,7 +762,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000008</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -775,7 +775,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000009</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -788,7 +788,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000010</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -801,7 +801,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000011</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -814,7 +814,7 @@
     <cijena_za_jedinicu_mjere>14.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>14.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>14.00</sidrena_cijena>
     <barkod>COV0000012</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -827,7 +827,7 @@
     <cijena_za_jedinicu_mjere>195.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>195.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>195.00</sidrena_cijena>
     <barkod>COV0000001</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -983,7 +983,7 @@
     <cijena_za_jedinicu_mjere>83.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>83.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>83.00</sidrena_cijena>
     <barkod>COV0000067</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -996,7 +996,7 @@
     <cijena_za_jedinicu_mjere>87.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>87.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>87.00</sidrena_cijena>
     <barkod>COV0000068</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1009,7 +1009,7 @@
     <cijena_za_jedinicu_mjere>281.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>281.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>281.00</sidrena_cijena>
     <barkod>COV0000028</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -1022,7 +1022,7 @@
     <cijena_za_jedinicu_mjere>263.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>263.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>263.00</sidrena_cijena>
     <barkod>COV0000083</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1035,7 +1035,7 @@
     <cijena_za_jedinicu_mjere>119.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>119.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>119.00</sidrena_cijena>
     <barkod>COV0000030</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1048,7 +1048,7 @@
     <cijena_za_jedinicu_mjere>99.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>99.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>99.00</sidrena_cijena>
     <barkod>COV0000029</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1061,7 +1061,7 @@
     <cijena_za_jedinicu_mjere>390.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>390.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>390.00</sidrena_cijena>
     <barkod>COV0000086</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1074,7 +1074,7 @@
     <cijena_za_jedinicu_mjere>15.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>15.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>15.00</sidrena_cijena>
     <barkod>COV0000005</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1087,7 +1087,7 @@
     <cijena_za_jedinicu_mjere>15.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>15.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>15.00</sidrena_cijena>
     <barkod>COV0000003</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1100,7 +1100,7 @@
     <cijena_za_jedinicu_mjere>10.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>10.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>10.00</sidrena_cijena>
     <barkod>COV0000004</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1113,7 +1113,7 @@
     <cijena_za_jedinicu_mjere>10.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>10.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>10.00</sidrena_cijena>
     <barkod>COV0000002</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1126,7 +1126,7 @@
     <cijena_za_jedinicu_mjere>70.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>70.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>70.00</sidrena_cijena>
     <barkod>COV0000036</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1139,7 +1139,7 @@
     <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>60.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>60.00</sidrena_cijena>
     <barkod>COV0000035</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1152,7 +1152,7 @@
     <cijena_za_jedinicu_mjere>49.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>49.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>49.00</sidrena_cijena>
     <barkod>COV0000014</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -1165,7 +1165,7 @@
     <cijena_za_jedinicu_mjere>49.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>49.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>49.00</sidrena_cijena>
     <barkod>COV0000015</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1178,7 +1178,7 @@
     <cijena_za_jedinicu_mjere>49.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>49.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>49.00</sidrena_cijena>
     <barkod>COV0000016</barkod>
     <dostupnost>NEDOSTUPNO</dostupnost>
@@ -1191,7 +1191,7 @@
     <cijena_za_jedinicu_mjere>89.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>89.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>89.00</sidrena_cijena>
     <barkod>COV0000033</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1204,7 +1204,7 @@
     <cijena_za_jedinicu_mjere>109.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>109.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>109.00</sidrena_cijena>
     <barkod>COV0000034</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1217,7 +1217,7 @@
     <cijena_za_jedinicu_mjere>89.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>89.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>89.00</sidrena_cijena>
     <barkod>COV0000031</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
@@ -1230,7 +1230,7 @@
     <cijena_za_jedinicu_mjere>109.00</cijena_za_jedinicu_mjere>
     <maloprodajna_cijena>109.00</maloprodajna_cijena>
     <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje></naziv_posebnog_oblika_prodaje>
+    <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>109.00</sidrena_cijena>
     <barkod>COV0000032</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
