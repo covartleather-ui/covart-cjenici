@@ -32,7 +32,7 @@ No Shopify credential or API token is stored in this public repository. For an a
 
 The workflow exchanges them for a fresh Admin API access token at each run. A legacy app with a long-lived token may instead use the single secret `SHOPIFY_ADMIN_ACCESS_TOKEN`. Without either complete credential set, generation exits before changing `current/`, `archive/` or `state.json`. Never commit credentials to this public repository.
 
-The Shopify shop domain is non-secret and is configured as `6ffdpq-40.myshopify.com`.
+The Shopify shop domain is non-secret and is configured as `6ffdpq-40.myshopify.com`. Check the GitHub Actions run status and `state.json` after configuring the repository secrets.
 
 Initial publication: **2026-09-25**, storage sequence **000001**.
 
