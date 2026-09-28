@@ -4,6 +4,8 @@ import json
 import os
 import shutil
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -18,6 +20,8 @@ TZ = ZoneInfo("Europe/Zagreb")
 
 SHOP = os.environ.get("SHOPIFY_SHOP", "6ffdpq-40.myshopify.com")
 TOKEN = os.environ.get("SHOPIFY_ADMIN_ACCESS_TOKEN", "")
+CLIENT_ID = os.environ.get("SHOPIFY_CLIENT_ID", "")
+CLIENT_SECRET = os.environ.get("SHOPIFY_CLIENT_SECRET", "")
 API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2026-07")
 EVENT_NAME = os.environ.get("GITHUB_EVENT_NAME", "")
 SCHEDULE_CRON = os.environ.get("SCHEDULE_CRON", "")
@@ -104,9 +108,36 @@ def field(node, name, default=""):
         return default
     return part.get("value", default)
 
+def shopify_token():
+    if CLIENT_ID and CLIENT_SECRET:
+        payload = urllib.parse.urlencode({
+            "grant_type": "client_credentials",
+            "client_id": CLIENT_ID,
+            "client_secret": CLIENT_SECRET,
+        }).encode("utf-8")
+        request = urllib.request.Request(
+            f"https://{SHOP}/admin/oauth/access_token",
+            data=payload,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                token_data = json.load(response)
+        except urllib.error.HTTPError as exc:
+            stop(f"Shopify token request failed (HTTP {exc.code})")
+        except Exception as exc:
+            stop(f"Shopify token request failed ({type(exc).__name__})")
+        access_token = token_data.get("access_token")
+        if not access_token:
+            stop("Shopify token response did not contain an access token")
+        return access_token
+    if TOKEN:
+        return TOKEN
+    stop("Configure SHOPIFY_CLIENT_ID and SHOPIFY_CLIENT_SECRET, or a legacy SHOPIFY_ADMIN_ACCESS_TOKEN")
+
 def graphql():
-    if not TOKEN:
-        stop("SHOPIFY_ADMIN_ACCESS_TOKEN secret is not configured")
+    access_token = shopify_token()
     url = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
     payload = json.dumps({"query": QUERY}).encode("utf-8")
     req = urllib.request.Request(
@@ -114,7 +145,7 @@ def graphql():
         data=payload,
         headers={
             "Content-Type": "application/json",
-            "X-Shopify-Access-Token": TOKEN,
+            "X-Shopify-Access-Token": access_token,
         },
         method="POST",
     )
