@@ -25,6 +25,8 @@ jobs:
         env:
           SHOPIFY_SHOP: 6ffdpq-40.myshopify.com
           SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
           SHOPIFY_API_VERSION: "2026-07"
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           SCHEDULE_CRON: ${{ github.event.schedule }}
