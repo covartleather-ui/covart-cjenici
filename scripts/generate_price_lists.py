@@ -166,6 +166,10 @@ def is_valid_schedule(now):
     cron_hour = SCHEDULE_CRON.split()[1] if len(SCHEDULE_CRON.split()) >= 2 else ""
     return cron_hour in valid_hours.get(offset, set())
 
+def daily_publication_missing(state, now):
+    # Hourly checks before the normal morning slots must not publish a new day.
+    return state.get("last_date") != now.date().isoformat() and (now.hour, now.minute) >= (7, 30)
+
 def load_state():
     if not STATE_FILE.exists():
         return {"last_sequence": 0, "last_date": None, "last_publication": None}
@@ -325,11 +329,12 @@ def main():
         stop("Source returned an empty required dataset")
 
     workshop = products + workshop_only
-    if EVENT_NAME == "schedule" and SCHEDULE_CRON == "45 * * * *" and current_rows_match({
+    if (EVENT_NAME == "schedule" and SCHEDULE_CRON == "45 * * * *"
+            and not daily_publication_missing(state, now) and current_rows_match({
         "webshop_csv": products,
         "workshop_csv": workshop,
         "services_csv": services,
-    }):
+    })):
         print("No relevant Shopify price-list changes; hourly publication skipped.")
         return
 
