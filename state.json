@@ -1,10 +1,10 @@
 {
-  "last_sequence": 22,
-  "last_date": "2026-10-14",
-  "last_publication": "2026-10-14T07:46:46+02:00",
+  "last_sequence": 23,
+  "last_date": "2026-10-15",
+  "last_publication": "2026-10-15T06:20:14+02:00",
   "counts": {
-    "webshop_products": 94,
-    "workshop_products": 105,
+    "webshop_products": 95,
+    "workshop_products": 106,
     "services_and_delivery": 44
   }
 }
