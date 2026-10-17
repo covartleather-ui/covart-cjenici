@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000025" datum_vrijeme="2026-10-17T07:44:14+02:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000026" datum_vrijeme="2026-10-17T19:04:31+02:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -51,19 +51,6 @@
     <sidrena_cijena>160.00</sidrena_cijena>
     <barkod>COV0000049</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
-  </proizvod>
-  <proizvod>
-    <naziv>Ručno šivani kožni remen Dravon</naziv>
-    <sifra>REM-DRA-40-S</sifra>
-    <marka>Covart</marka>
-    <jedinica_mjere>kom</jedinica_mjere>
-    <cijena_za_jedinicu_mjere>50.00</cijena_za_jedinicu_mjere>
-    <maloprodajna_cijena>50.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <sidrena_cijena>50.00</sidrena_cijena>
-    <barkod>COV0000056</barkod>
-    <dostupnost>NEDOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
@@ -272,19 +259,6 @@
     <sidrena_cijena>26.00</sidrena_cijena>
     <barkod>COV0000046</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
-  </proizvod>
-  <proizvod>
-    <naziv>Ručno šivani kožni remen Dravon 40</naziv>
-    <sifra>REM-DRA-40-SME</sifra>
-    <marka>Covart</marka>
-    <jedinica_mjere>kom</jedinica_mjere>
-    <cijena_za_jedinicu_mjere>57.00</cijena_za_jedinicu_mjere>
-    <maloprodajna_cijena>57.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <sidrena_cijena>57.00</sidrena_cijena>
-    <barkod>COV0000062</barkod>
-    <dostupnost>NEDOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
     <naziv>Ručno izrađeni kožni remen Black Forge 43 – Skull Force Edition</naziv>
