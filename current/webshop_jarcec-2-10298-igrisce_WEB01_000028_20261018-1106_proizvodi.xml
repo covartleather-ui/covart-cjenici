@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000027" datum_vrijeme="2026-10-18T07:44:11+02:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000028" datum_vrijeme="2026-10-18T11:06:01+02:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -804,45 +804,6 @@
     <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>195.00</sidrena_cijena>
     <barkod>COV0000001</barkod>
-    <dostupnost>DOSTUPNO</dostupnost>
-  </proizvod>
-  <proizvod>
-    <naziv>Minimalistički novčanik</naziv>
-    <sifra>NOV-TLV-TSM</sifra>
-    <marka>Covart</marka>
-    <jedinica_mjere>kom</jedinica_mjere>
-    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
-    <maloprodajna_cijena>60.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>DA</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje>Sniženje</naziv_posebnog_oblika_prodaje>
-    <sidrena_cijena>70.00</sidrena_cijena>
-    <barkod>COV0000020</barkod>
-    <dostupnost>DOSTUPNO</dostupnost>
-  </proizvod>
-  <proizvod>
-    <naziv>Minimalistički novčanik</naziv>
-    <sifra>NOV-TLV-SME</sifra>
-    <marka>Covart</marka>
-    <jedinica_mjere>kom</jedinica_mjere>
-    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
-    <maloprodajna_cijena>60.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>DA</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje>Sniženje</naziv_posebnog_oblika_prodaje>
-    <sidrena_cijena>70.00</sidrena_cijena>
-    <barkod>COV0000019</barkod>
-    <dostupnost>NEDOSTUPNO</dostupnost>
-  </proizvod>
-  <proizvod>
-    <naziv>Minimalistički novčanik</naziv>
-    <sifra>NOV-TLV-PLA</sifra>
-    <marka>Covart</marka>
-    <jedinica_mjere>kom</jedinica_mjere>
-    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
-    <maloprodajna_cijena>60.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>DA</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje>Sniženje</naziv_posebnog_oblika_prodaje>
-    <sidrena_cijena>70.00</sidrena_cijena>
-    <barkod>COV0000018</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
