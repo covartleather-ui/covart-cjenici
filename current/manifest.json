@@ -1,15 +1,15 @@
 {
   "merchant": "Covart, obrt za proizvodnju i usluge",
-  "published_at": "2026-10-18T11:06:01+02:00",
-  "storage_sequence": "000028",
+  "published_at": "2026-10-19T07:47:36+02:00",
+  "storage_sequence": "000029",
   "currency": "EUR",
   "files": {
-    "webshop_csv": "current/webshop_jarcec-2-10298-igrisce_WEB01_000028_20261018-1106_proizvodi.csv",
-    "webshop_xml": "current/webshop_jarcec-2-10298-igrisce_WEB01_000028_20261018-1106_proizvodi.xml",
-    "workshop_csv": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000028_20261018-1106_proizvodi.csv",
-    "workshop_xml": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000028_20261018-1106_proizvodi.xml",
-    "services_csv": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000028_20261018-1106_usluge.csv",
-    "services_xml": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000028_20261018-1106_usluge.xml"
+    "webshop_csv": "current/webshop_jarcec-2-10298-igrisce_WEB01_000029_20261019-0747_proizvodi.csv",
+    "webshop_xml": "current/webshop_jarcec-2-10298-igrisce_WEB01_000029_20261019-0747_proizvodi.xml",
+    "workshop_csv": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000029_20261019-0747_proizvodi.csv",
+    "workshop_xml": "current/pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_000029_20261019-0747_proizvodi.xml",
+    "services_csv": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000029_20261019-0747_usluge.csv",
+    "services_xml": "current/usluzni-objekt_jarcec-2-10298-igrisce_USL01_000029_20261019-0747_usluge.xml"
   },
   "counts": {
     "webshop_products": 90,
