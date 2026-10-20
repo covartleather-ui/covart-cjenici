@@ -82,6 +82,48 @@ query CovartPriceLists {
 }
 """
 
+# Identifier preparation runs before the public price-list generator. A code in
+# Shopify is an internal identifier, not a registered GS1/EAN barcode.
+IDENTIFIERS_QUERY = r"""
+query CovartIdentifierAudit($after: String) {
+  products(first: 250, after: $after) {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      id title status
+      variants(first: 250) {
+        pageInfo { hasNextPage }
+        nodes {
+          id sku barcode
+          anchor: metafield(namespace: "custom", key: "anchor_price") { value }
+        }
+      }
+    }
+  }
+  workshop: metaobjects(type: "covart_workshop_product", first: 250) {
+    pageInfo { hasNextPage }
+    nodes {
+      sku: field(key: "sku") { value }
+      barcode: field(key: "barcode") { value }
+    }
+  }
+  currentAppInstallation { accessScopes { handle } }
+}
+"""
+
+ASSIGN_IDENTIFIERS_MUTATION = r"""
+mutation CovartAssignIdentifiers($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
+  productVariantsBulkUpdate(
+    productId: $productId,
+    variants: $variants,
+    allowPartialUpdates: false
+  ) {
+    productVariants { id sku barcode }
+    userErrors { field message }
+  }
+}
+"""
+
+
 def stop(msg: str) -> None:
     print(f"ERROR: {msg}", file=sys.stderr)
     raise SystemExit(1)
@@ -136,10 +178,10 @@ def shopify_token():
         return TOKEN
     stop("Configure SHOPIFY_CLIENT_ID and SHOPIFY_CLIENT_SECRET, or a legacy SHOPIFY_ADMIN_ACCESS_TOKEN")
 
-def graphql():
-    access_token = shopify_token()
+def graphql(query=QUERY, variables=None, access_token=None):
+    access_token = access_token or shopify_token()
     url = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
-    payload = json.dumps({"query": QUERY}).encode("utf-8")
+    payload = json.dumps({"query": query, "variables": variables or {}}).encode("utf-8")
     req = urllib.request.Request(
         url,
         data=payload,
@@ -243,6 +285,115 @@ def prune_archive(now):
         if day < cutoff:
             shutil.rmtree(p)
 
+def ensure_identifiers(state):
+    """Fill missing SKU/internal barcode only; NEVER invent historic anchor prices."""
+    token = shopify_token()
+    products = []
+    used_skus = set()
+    used_barcodes = set()
+    last_number = int(state.get("last_barcode_number", 0))
+    cursor = None
+    scopes = set()
+
+    while True:
+        data = graphql(IDENTIFIERS_QUERY, {"after": cursor}, token)
+        scopes = {scope["handle"] for scope in data["currentAppInstallation"]["accessScopes"]}
+        workshop = data["workshop"]
+        if workshop["pageInfo"]["hasNextPage"]:
+            stop("Identifier audit: workshop metaobjects exceed the first 250; add pagination")
+        for item in workshop["nodes"]:
+            for key, target in (("sku", used_skus), ("barcode", used_barcodes)):
+                value = (item.get(key) or {}).get("value")
+                if value:
+                    target.add(value.strip())
+
+        page = data["products"]
+        for product in page["nodes"]:
+            if product["variants"]["pageInfo"]["hasNextPage"]:
+                stop(f"Identifier audit: more than 250 variants in {product['title']}; add pagination")
+            products.append(product)
+            for variant in product["variants"]["nodes"]:
+                for key, target in (("sku", used_skus), ("barcode", used_barcodes)):
+                    value = variant.get(key)
+                    if value:
+                        target.add(value.strip())
+        if not page["pageInfo"]["hasNextPage"]:
+            break
+        cursor = page["pageInfo"]["endCursor"]
+
+    # Reserve all previously issued COV serials, even on archived products.
+    for code in used_barcodes:
+        if code.startswith("COV") and code[3:].isdigit():
+            last_number = max(last_number, int(code[3:]))
+
+    updates = []
+    for product in products:
+        if product["status"] != "ACTIVE":
+            continue
+        pending = []
+        for variant in product["variants"]["nodes"]:
+            anchor = (variant.get("anchor") or {}).get("value")
+            if not anchor:
+                stop(
+                    f"Missing verified anchor price for '{product['title']}', "
+                    f"variant {variant['id']}. Set custom.anchor_price in Shopify. "
+                    "Historical/reference prices must not be fabricated."
+                )
+            item = {"id": variant["id"]}
+            if not (variant.get("sku") or "").strip():
+                # Stable collision-proof fallback, not a merchant-defined product code.
+                candidate = "AUTO-" + variant["id"].rsplit("/", 1)[-1]
+                if candidate in used_skus:
+                    stop(f"Automatic SKU collision: {candidate}")
+                item["sku"] = candidate
+                used_skus.add(candidate)
+            if not (variant.get("barcode") or "").strip():
+                while True:
+                    last_number += 1
+                    candidate = f"COV{last_number:07d}"
+                    if candidate not in used_barcodes:
+                        break
+                item["barcode"] = candidate
+                used_barcodes.add(candidate)
+            if len(item) > 1:
+                pending.append(item)
+        if pending:
+            updates.append((product, pending))
+
+    if updates and "write_products" not in scopes:
+        stop(
+            "Automatic SKU/barcode generation requires Shopify app scope "
+            "'write_products'. Update Shopify app permissions used by GitHub Actions."
+        )
+    if "write_products" not in scopes:
+        print("WARNING: Shopify GitHub app has no 'write_products' scope; "
+              "automatic identifiers will need this permission for future products.")
+
+    for product, pending in updates:
+        data = graphql(ASSIGN_IDENTIFIERS_MUTATION, {
+            "productId": product["id"], "variants": pending,
+        }, token)["productVariantsBulkUpdate"]
+        if data["userErrors"]:
+            stop(
+                f"Could not auto-fill identifiers for '{product['title']}': "
+                + json.dumps(data["userErrors"], ensure_ascii=False)
+            )
+        returned = {v["id"]: v for v in data["productVariants"]}
+        for item in pending:
+            variant = returned.get(item["id"])
+            if not variant or any(variant.get(key) != value for key, value in item.items()):
+                stop(f"Shopify did not confirm identifier update for {item['id']}")
+        print(f"Auto-filled identifiers for {len(pending)} variants in: {product['title']}")
+
+    if last_number != int(state.get("last_barcode_number", 0)):
+        state["last_barcode_number"] = last_number
+        STATE_FILE.write_text(json.dumps(
+            state, ensure_ascii=False, indent=2
+        ) + "\n", encoding="utf-8")
+    print(f"Identifier audit passed: {len(products)} products, "
+          f"{sum(len(items) for _, items in updates)} updated variants")
+
+
 def main():
     now = datetime.now(TZ)
     if not is_valid_schedule(now):
@@ -255,6 +406,7 @@ def main():
         print(f"Today's publication already exists ({today}); fallback run skipped.")
         return
 
+    ensure_identifiers(state)
     data = graphql()
     products = []
     for p in data["products"]["nodes"]:
@@ -408,6 +560,7 @@ def main():
         "last_date": today,
         "last_publication": iso,
         "counts": manifest["counts"],
+        "last_barcode_number": state.get("last_barcode_number", 0),
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     prune_archive(now)
