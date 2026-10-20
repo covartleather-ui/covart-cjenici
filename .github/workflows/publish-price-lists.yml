@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - "scripts/generate_price_lists.py"
+      - "tests/**"
       - ".github/workflows/publish-price-lists.yml"
   schedule:
     # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
@@ -30,6 +31,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Test identifier generation safeguards
+        run: python3 -m unittest discover -s tests -v
 
       - name: Generate and validate price lists
         env:
