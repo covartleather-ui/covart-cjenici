@@ -2,6 +2,11 @@ name: Publish Covart price lists
 
 on:
   workflow_dispatch:
+  # Verify identifier automation whenever publication code is updated.
+  push:
+    paths:
+      - "scripts/generate_price_lists.py"
+      - ".github/workflows/publish-price-lists.yml"
   schedule:
     # 07:15 Europe/Zagreb: summer UTC+2, winter UTC+1.
     - cron: "15 5 * * *"
