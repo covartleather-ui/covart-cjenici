@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000029" datum_vrijeme="2026-10-19T07:47:36+02:00" valuta="EUR" objekt="Pokretni poslovni prostor" oznaka_objekta="PPP01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000030" datum_vrijeme="2026-10-20T04:22:12+02:00" valuta="EUR" objekt="Pokretni poslovni prostor" oznaka_objekta="PPP01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -1168,6 +1168,136 @@
     <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>109.00</sidrena_cijena>
     <barkod>COV0000032</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-01</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000108</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-02</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000109</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-03</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000110</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-04</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000111</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-05</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000112</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-06</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000113</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-07</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000114</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-08</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000115</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-09</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000116</barkod>
+    <dostupnost>DOSTUPNO</dostupnost>
+  </proizvod>
+  <proizvod>
+    <naziv>Minimalistički kožni novčanik – ručno šivan</naziv>
+    <sifra>NOV-MIN-10</sifra>
+    <marka>Covart</marka>
+    <jedinica_mjere>kom</jedinica_mjere>
+    <cijena_za_jedinicu_mjere>60.00</cijena_za_jedinicu_mjere>
+    <maloprodajna_cijena>60.00</maloprodajna_cijena>
+    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+    <naziv_posebnog_oblika_prodaje />
+    <sidrena_cijena>60.00</sidrena_cijena>
+    <barkod>COV0000117</barkod>
     <dostupnost>DOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
