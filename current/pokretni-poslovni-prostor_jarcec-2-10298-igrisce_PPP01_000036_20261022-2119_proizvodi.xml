@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000035" datum_vrijeme="2026-10-22T14:14:08+02:00" valuta="EUR" objekt="Pokretni poslovni prostor" oznaka_objekta="PPP01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" adresa="Jarčec 2, 10298 Igrišće" broj_pohrane="000036" datum_vrijeme="2026-10-22T21:19:04+02:00" valuta="EUR" objekt="Pokretni poslovni prostor" oznaka_objekta="PPP01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -557,7 +557,7 @@
     <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>95.00</sidrena_cijena>
     <barkod>COV0000053</barkod>
-    <dostupnost>DOSTUPNO</dostupnost>
+    <dostupnost>NEDOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni novčanik Stratum</naziv>
@@ -570,7 +570,7 @@
     <naziv_posebnog_oblika_prodaje />
     <sidrena_cijena>95.00</sidrena_cijena>
     <barkod>COV0000052</barkod>
-    <dostupnost>DOSTUPNO</dostupnost>
+    <dostupnost>NEDOSTUPNO</dostupnost>
   </proizvod>
   <proizvod>
     <naziv>Muški kožni remen Xyrian 35</naziv>
