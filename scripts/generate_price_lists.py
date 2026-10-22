@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+from collections import Counter
 import json
 import os
 import shutil
@@ -208,10 +209,6 @@ def is_valid_schedule(now):
     cron_hour = SCHEDULE_CRON.split()[1] if len(SCHEDULE_CRON.split()) >= 2 else ""
     return cron_hour in valid_hours.get(offset, set())
 
-def daily_publication_missing(state, now):
-    # Hourly checks before the normal morning slots must not publish a new day.
-    return state.get("last_date") != now.date().isoformat() and (now.hour, now.minute) >= (7, 30)
-
 def load_state():
     if not STATE_FILE.exists():
         return {"last_sequence": 0, "last_date": None, "last_publication": None}
@@ -259,7 +256,10 @@ def current_rows_match(datasets):
                 return False
             with path.open("r", encoding="utf-8-sig", newline="") as f:
                 actual = list(csv.DictReader(f, delimiter=";"))
-            if actual != expected:
+            # API ordering alone is not a price-list change; preserve duplicates.
+            actual_rows = Counter(tuple(sorted(row.items())) for row in actual)
+            expected_rows = Counter(tuple(sorted(row.items())) for row in expected)
+            if actual_rows != expected_rows:
                 return False
         return True
     except (OSError, KeyError, ValueError, csv.Error, json.JSONDecodeError):
@@ -402,10 +402,6 @@ def main():
 
     state = load_state()
     today = now.date().isoformat()
-    if EVENT_NAME == "schedule" and SCHEDULE_CRON != "45 * * * *" and state.get("last_date") == today:
-        print(f"Today's publication already exists ({today}); fallback run skipped.")
-        return
-
     ensure_identifiers(state)
     data = graphql()
     products = []
@@ -481,13 +477,13 @@ def main():
         stop("Source returned an empty required dataset")
 
     workshop = products + workshop_only
-    if (EVENT_NAME == "schedule" and SCHEDULE_CRON == "45 * * * *"
-            and not daily_publication_missing(state, now) and current_rows_match({
+    # Apply the same change-only rule to scheduled, manual and push runs.
+    if current_rows_match({
         "webshop_csv": products,
         "workshop_csv": workshop,
         "services_csv": services,
-    })):
-        print("No relevant Shopify price-list changes; hourly publication skipped.")
+    }):
+        print("No relevant Shopify price-list changes; publication skipped.")
         return
 
     sequence = int(state.get("last_sequence", 0)) + 1
