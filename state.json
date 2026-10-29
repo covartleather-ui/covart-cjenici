@@ -1,10 +1,10 @@
 {
-  "last_sequence": 37,
-  "last_date": "2026-10-22",
-  "last_publication": "2026-10-22T22:11:09+02:00",
+  "last_sequence": 38,
+  "last_date": "2026-10-29",
+  "last_publication": "2026-10-29T11:25:09+01:00",
   "counts": {
-    "webshop_products": 100,
-    "workshop_products": 111,
+    "webshop_products": 99,
+    "workshop_products": 110,
     "services_and_delivery": 44
   },
   "last_barcode_number": 117
