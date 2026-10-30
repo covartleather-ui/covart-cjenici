@@ -15,8 +15,6 @@ on:
     # Reserve daily publication at 07:35 Europe/Zagreb if the primary run is missed.
     - cron: "35 5 * * *"
     - cron: "35 6 * * *"
-    # Check price-list data hourly; also recover a missed daily publication.
-    - cron: "45 * * * *"
 
 permissions:
   contents: write
