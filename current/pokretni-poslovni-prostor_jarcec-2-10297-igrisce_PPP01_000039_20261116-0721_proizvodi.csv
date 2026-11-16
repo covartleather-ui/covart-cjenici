@@ -32,8 +32,8 @@ Ručno šivani kožni remen Xyrian;REM-XYR-M;Covart;kom;85.00;85.00;NE;;85.00;CO
 Ručno šivani kožni remen Xyrian 40;REM-XYR-40-M;Covart;kom;75.00;75.00;NE;;75.00;COV0000075;DOSTUPNO
 Ručno šivani kožni remen Xyrian 40;REM-XYR-40-L;Covart;kom;75.00;75.00;NE;;75.00;COV0000073;DOSTUPNO
 Ručno šivani kožni remen Xyrian 40;REM-XYR-40-M;Covart;kom;82.00;82.00;NE;;82.00;COV0000074;DOSTUPNO
-Ručno šivani kožni remeni Xyrian 40;REM-XYR-40-L;Covart;kom;68.39;68.39;DA;Sniženje;89.00;COV0000080;DOSTUPNO
-Ručno šivani kožni remeni Xyrian 40;REM-XYR-40-XXL;Covart;kom;68.39;68.39;DA;Sniženje;89.00;COV0000081;DOSTUPNO
+Ručno šivani kožni remeni Xyrian 40;REM-XYR-40-L;Covart;kom;68.39;68.39;DA;Sniženje;89.00;COV0000080;NEDOSTUPNO
+Ručno šivani kožni remeni Xyrian 40;REM-XYR-40-XXL;Covart;kom;68.39;68.39;DA;Sniženje;89.00;COV0000081;NEDOSTUPNO
 Ručno izrađeni kožni remen Kaelis 34;REM-KAE-34;Covart;kom;32.00;32.00;NE;;32.00;COV0000041;DOSTUPNO
 Ručno šivani remen Xyrian 34;REM-XYR-34-3XL;Covart;kom;60.00;60.00;NE;;60.00;COV0000082;DOSTUPNO
 Ručno izrađeni kožni remen Dravon 34;REM-DRA-34-3XL;Covart;kom;53.00;53.00;NE;;53.00;COV0000040;DOSTUPNO
@@ -69,7 +69,7 @@ Futrola za pištolj od čvrste kože;FUT-PIS;Covart;kom;195.00;195.00;NE;;195.00
 Ženski remen s kopčom zmije;REM-XYR-40-OGR-SME-M-95;Covart;kom;69.00;69.00;NE;;80.00;COV0000088;NEDOSTUPNO
 Ženski remen s kopčom zmije;REM-XYR-40-OGR-SME-XXL-110;Covart;kom;69.00;69.00;NE;;80.00;COV0000094;DOSTUPNO
 Ženski remen s kopčom zmije;REM-XYR-40-OGR-SME-XL-115;Covart;kom;69.00;69.00;NE;;80.00;COV0000092;NEDOSTUPNO
-Ručno šivani kožni remen Nature 40;REM-NTR-40-XL;Covart;kom;83.00;83.00;NE;;83.00;COV0000067;DOSTUPNO
+Ručno šivani kožni remen Nature 40;REM-NTR-40-XL;Covart;kom;83.00;83.00;NE;;83.00;COV0000067;NEDOSTUPNO
 Ručno šivani kožni remen Nature 40 B;REM-NTR-40-B-XL;Covart;kom;87.00;87.00;NE;;87.00;COV0000068;DOSTUPNO
 Replika povijesnih kožnih uprtača;UPR-POV-PRM;Covart;kom;281.00;281.00;NE;;281.00;COV0000028;NEDOSTUPNO
 Ručno šivani vintage kožni tregeri;TRG;Covart;kom;263.00;263.00;NE;;263.00;COV0000083;DOSTUPNO
@@ -81,13 +81,15 @@ Gajka (držak) za opasač s D-prstenom - PREMIUM;GAJ-POV-PRM-CRN-DPR-POL;Covart;
 Gajka (držak) za opasač s D-prstenom - PREMIUM;GAJ-POV-NAT-DPR-NER;Covart;kom;10.00;10.00;NE;;10.00;COV0000004;DOSTUPNO
 Replika povijesnog opasača Natur s dvije gajke - Classic;OPA-POV-KLA-NAT-XXL;Covart;kom;70.00;70.00;NE;;70.00;COV0000036;DOSTUPNO
 Replika povijesnog opasača Natur s dvije gajke - Classic;OPA-POV-KLA-NAT-XXL;Covart;kom;60.00;60.00;NE;;60.00;COV0000035;DOSTUPNO
+Replika povijesnog opasača Natur s dvije gajke - Classic;OPA-POV-KLA-NAT-XXL-1;Covart;kom;70.00;70.00;NE;;70.00;COV0000118;DOSTUPNO
+Replika povijesnog opasača Natur s dvije gajke - Classic;OPA-POV-KLA-NAT-XXL-2;Covart;kom;60.00;60.00;NE;;60.00;COV0000119;DOSTUPNO
 Kožni remen ručni rad - Classic 40;REM-ZER-40-NAT-4XL;Covart;kom;49.00;49.00;NE;;49.00;COV0000014;NEDOSTUPNO
-Kožni remen ručni rad - Classic 40;REM-ZER-40-NAT-XXL;Covart;kom;49.00;49.00;NE;;49.00;COV0000015;DOSTUPNO
+Kožni remen ručni rad - Classic 40;REM-ZER-40-NAT-XXL;Covart;kom;49.00;49.00;NE;;49.00;COV0000015;NEDOSTUPNO
 Kožni remen ručni rad - Classic 40;REM-ZER-40-NAT-XXL+;Covart;kom;49.00;49.00;NE;;49.00;COV0000016;NEDOSTUPNO
-Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XXL;Covart;kom;89.00;89.00;NE;;89.00;COV0000033;DOSTUPNO
-Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XXL;Covart;kom;109.00;109.00;NE;;109.00;COV0000034;DOSTUPNO
-Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XL;Covart;kom;89.00;89.00;NE;;89.00;COV0000031;DOSTUPNO
-Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XL;Covart;kom;109.00;109.00;NE;;109.00;COV0000032;DOSTUPNO
+Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XXL;Covart;kom;89.00;89.00;NE;;89.00;COV0000033;NEDOSTUPNO
+Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XXL;Covart;kom;109.00;109.00;NE;;109.00;COV0000034;NEDOSTUPNO
+Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XL;Covart;kom;89.00;89.00;NE;;89.00;COV0000031;NEDOSTUPNO
+Replika povijesnog opasača crni - PREMIUM;OPA-POV-PRM-CRN-XL;Covart;kom;109.00;109.00;NE;;109.00;COV0000032;NEDOSTUPNO
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-01;Covart;kom;60.00;60.00;NE;;60.00;COV0000108;DOSTUPNO
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-02;Covart;kom;60.00;60.00;NE;;60.00;COV0000109;DOSTUPNO
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-03;Covart;kom;60.00;60.00;NE;;60.00;COV0000110;DOSTUPNO
@@ -98,6 +100,16 @@ Minimalistički kožni novčanik – ručno šivan;NOV-MIN-07;Covart;kom;60.00;6
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-08;Covart;kom;60.00;60.00;NE;;60.00;COV0000115;DOSTUPNO
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-09;Covart;kom;60.00;60.00;NE;;60.00;COV0000116;DOSTUPNO
 Minimalistički kožni novčanik – ručno šivan;NOV-MIN-10;Covart;kom;60.00;60.00;NE;;60.00;COV0000117;DOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57744854155590;Covart;kom;65.00;65.00;NE;;65.00;COV0000120;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57744869687622;Covart;kom;65.00;65.00;NE;;65.00;COV0000121;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57744869720390;Covart;kom;65.00;65.00;NE;;65.00;COV0000122;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808533127494;Covart;kom;50.00;50.00;NE;;50.00;COV0000123;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808533160262;Covart;kom;50.00;50.00;NE;;50.00;COV0000124;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808533193030;Covart;kom;50.00;50.00;NE;;50.00;COV0000125;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808579166534;Covart;kom;65.00;65.00;NE;;65.00;COV0000126;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808579199302;Covart;kom;50.00;50.00;NE;;50.00;COV0000127;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808647323974;Covart;kom;65.00;65.00;NE;;65.00;COV0000128;NEDOSTUPNO
+Ručno šivani lovački remen - Hunter 40;AUTO-57808647356742;Covart;kom;50.00;50.00;NE;;50.00;COV0000129;NEDOSTUPNO
 Kožna pregača - Osnovna;APR-LGT;Covart;kom;130.00;130.00;NE;;130.00;COV0000096;PO NARUDŽBI
 Držak za remen jednostavni;DRZ-JED;Covart;kom;5.00;5.00;NE;;5.00;COV0000097;DOSTUPNO
 Akrilna pločica – izrada i graviranje 17,8 × 12,3 cm + set za montažu;GRV-PLK-MON;Covart;kom;23.00;23.00;NE;;23.00;COV0000098;PO NARUDŽBI
@@ -109,3 +121,13 @@ Radni remen 40 Classic;REM-XYR-RAD-40;Covart;kom;65.00;65.00;NE;;65.00;COV000010
 Privjesak standard;DOD-PRI-STA;Covart;kom;7.00;7.00;NE;;7.00;COV0000104;NEDOSTUPNO
 Privjesak s gravurom;DOD-PRI-GRV;Covart;kom;10.00;10.00;NE;;10.00;COV0000105;NEDOSTUPNO
 Privjesak premium;DOD-PRI-PRM;Covart;kom;16.00;16.00;NE;;16.00;COV0000106;NEDOSTUPNO
+Kožna traka Standard, 0,5 – 1,4 cm;TRK-STD-05-14;Covart;kom;3.00;3.00;NE;;3.00;TRK-STD-05-14;PO NARUDŽBI
+Kožna traka Premium, 0,5 – 1,4 cm;TRK-PRE-05-14;Covart;kom;6.00;6.00;NE;;6.00;TRK-PRE-05-14;PO NARUDŽBI
+Kožna traka Standard, 1,5 – 2,4 cm;TRK-STD-15-24;Covart;kom;6.00;6.00;NE;;6.00;TRK-STD-15-24;PO NARUDŽBI
+Kožna traka Premium, 1,5 – 2,4 cm;TRK-PRE-15-24;Covart;kom;9.00;9.00;NE;;9.00;TRK-PRE-15-24;PO NARUDŽBI
+Kožna traka Standard, 2,5 – 3,4 cm;TRK-STD-25-34;Covart;kom;9.00;9.00;NE;;9.00;TRK-STD-25-34;PO NARUDŽBI
+Kožna traka Premium, 2,5 – 3,4 cm;TRK-PRE-25-34;Covart;kom;12.00;12.00;NE;;12.00;TRK-PRE-25-34;PO NARUDŽBI
+Kožna traka Standard, 3,5 – 4,4 cm;TRK-STD-35-44;Covart;kom;12.00;12.00;NE;;12.00;TRK-STD-35-44;PO NARUDŽBI
+Kožna traka Premium, 3,5 – 4,4 cm;TRK-PRE-35-44;Covart;kom;15.00;15.00;NE;;15.00;TRK-PRE-35-44;PO NARUDŽBI
+Kožna traka Standard, 4,5 – 5,0 cm;TRK-STD-45-50;Covart;kom;15.00;15.00;NE;;15.00;TRK-STD-45-50;PO NARUDŽBI
+Kožna traka Premium, 4,5 – 5,0 cm;TRK-PRE-45-50;Covart;kom;18.00;18.00;NE;;18.00;TRK-PRE-45-50;PO NARUDŽBI
