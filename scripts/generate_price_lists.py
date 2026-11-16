@@ -492,12 +492,12 @@ def main():
     iso = now.isoformat(timespec="seconds")
 
     names = {
-        "webshop_csv": f"webshop_jarcec-2-10298-igrisce_WEB01_{seq}_{stamp}_proizvodi.csv",
-        "webshop_xml": f"webshop_jarcec-2-10298-igrisce_WEB01_{seq}_{stamp}_proizvodi.xml",
-        "workshop_csv": f"pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_{seq}_{stamp}_proizvodi.csv",
-        "workshop_xml": f"pokretni-poslovni-prostor_jarcec-2-10298-igrisce_PPP01_{seq}_{stamp}_proizvodi.xml",
-        "services_csv": f"usluzni-objekt_jarcec-2-10298-igrisce_USL01_{seq}_{stamp}_usluge.csv",
-        "services_xml": f"usluzni-objekt_jarcec-2-10298-igrisce_USL01_{seq}_{stamp}_usluge.xml",
+        "webshop_csv": f"webshop_jarcec-2-10297-igrisce_WEB01_{seq}_{stamp}_proizvodi.csv",
+        "webshop_xml": f"webshop_jarcec-2-10297-igrisce_WEB01_{seq}_{stamp}_proizvodi.xml",
+        "workshop_csv": f"pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_{seq}_{stamp}_proizvodi.csv",
+        "workshop_xml": f"pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_{seq}_{stamp}_proizvodi.xml",
+        "services_csv": f"usluzni-objekt_jarcec-2-10297-igrisce_USL01_{seq}_{stamp}_usluge.csv",
+        "services_xml": f"usluzni-objekt_jarcec-2-10297-igrisce_USL01_{seq}_{stamp}_usluge.xml",
     }
 
     clean_current()
@@ -511,7 +511,7 @@ def main():
 
     common = {
         "trgovac": "Covart, obrt za proizvodnju i usluge",
-        "adresa": "Jarčec 2, 10298 Igrišće",
+        "adresa": "Jarčec 2, 10297 Igrišće",
         "broj_pohrane": seq,
         "datum_vrijeme": iso,
         "valuta": "EUR",
