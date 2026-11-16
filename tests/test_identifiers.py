@@ -47,7 +47,14 @@ class IdentifierTests(unittest.TestCase):
             self.assertEqual(query, mod.ASSIGN_IDENTIFIERS_MUTATION)
             mutations.append(variables)
             return {"productVariantsBulkUpdate": {
-                "productVariants": variables["variants"], "userErrors": [],
+                "productVariants": [
+                    {
+                        "id": variant["id"],
+                        "sku": variant.get("inventoryItem", {}).get("sku"),
+                        "barcode": variant.get("barcode"),
+                    }
+                    for variant in variables["variants"]
+                ], "userErrors": [],
             }}
 
         with tempfile.TemporaryDirectory() as d:
@@ -63,7 +70,8 @@ class IdentifierTests(unittest.TestCase):
         self.assertEqual(len(mutations), 1)
         self.assertEqual(mutations[0]["productId"], "gid://shopify/Product/10")
         update = mutations[0]["variants"][0]
-        self.assertEqual(update["sku"], "AUTO-42")
+        self.assertEqual(update["inventoryItem"]["sku"], "AUTO-42")
+        self.assertNotIn("sku", update)
         self.assertEqual(update["barcode"], "COV0000108")
         self.assertEqual(state["last_barcode_number"], 108)
 

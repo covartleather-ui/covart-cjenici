@@ -8,7 +8,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from xml.etree import ElementTree as ET
@@ -271,19 +271,7 @@ def clean_current():
         if p.is_file() and p.suffix.lower() in {".csv", ".xml"}:
             p.unlink()
 
-def prune_archive(now):
-    cutoff = now.date() - timedelta(days=40)
-    if not ARCHIVE.exists():
-        return
-    for p in ARCHIVE.iterdir():
-        if not p.is_dir():
-            continue
-        try:
-            day = datetime.strptime(p.name, "%Y-%m-%d").date()
-        except ValueError:
-            continue
-        if day < cutoff:
-            shutil.rmtree(p)
+
 
 def ensure_identifiers(state):
     """Fill missing SKU/internal barcode only; NEVER invent historic anchor prices."""
@@ -345,7 +333,7 @@ def ensure_identifiers(state):
                 candidate = "AUTO-" + variant["id"].rsplit("/", 1)[-1]
                 if candidate in used_skus:
                     stop(f"Automatic SKU collision: {candidate}")
-                item["sku"] = candidate
+                item["inventoryItem"] = {"sku": candidate}
                 used_skus.add(candidate)
             if not (variant.get("barcode") or "").strip():
                 while True:
@@ -381,8 +369,14 @@ def ensure_identifiers(state):
         returned = {v["id"]: v for v in data["productVariants"]}
         for item in pending:
             variant = returned.get(item["id"])
-            if not variant or any(variant.get(key) != value for key, value in item.items()):
+            if not variant:
                 stop(f"Shopify did not confirm identifier update for {item['id']}")
+            expected_sku = item.get("inventoryItem", {}).get("sku")
+            if expected_sku and variant.get("sku") != expected_sku:
+                stop(f"Shopify did not confirm SKU update for {item['id']}")
+            expected_barcode = item.get("barcode")
+            if expected_barcode and variant.get("barcode") != expected_barcode:
+                stop(f"Shopify did not confirm barcode update for {item['id']}")
         print(f"Auto-filled identifiers for {len(pending)} variants in: {product['title']}")
 
     if last_number != int(state.get("last_barcode_number", 0)):
@@ -559,7 +553,7 @@ def main():
         "last_barcode_number": state.get("last_barcode_number", 0),
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    prune_archive(now)
+    # Keep all previous published CSV/XML archives for audit and price history.
     print(json.dumps(manifest, ensure_ascii=False))
 
 if __name__ == "__main__":
