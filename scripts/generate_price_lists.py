@@ -345,7 +345,7 @@ def ensure_identifiers(state):
                 candidate = "AUTO-" + variant["id"].rsplit("/", 1)[-1]
                 if candidate in used_skus:
                     stop(f"Automatic SKU collision: {candidate}")
-                item["sku"] = candidate
+                item["inventoryItem"] = {"sku": candidate}
                 used_skus.add(candidate)
             if not (variant.get("barcode") or "").strip():
                 while True:
@@ -381,8 +381,14 @@ def ensure_identifiers(state):
         returned = {v["id"]: v for v in data["productVariants"]}
         for item in pending:
             variant = returned.get(item["id"])
-            if not variant or any(variant.get(key) != value for key, value in item.items()):
+            if not variant:
                 stop(f"Shopify did not confirm identifier update for {item['id']}")
+            expected_sku = item.get("inventoryItem", {}).get("sku")
+            if expected_sku and variant.get("sku") != expected_sku:
+                stop(f"Shopify did not confirm SKU update for {item['id']}")
+            expected_barcode = item.get("barcode")
+            if expected_barcode and variant.get("barcode") != expected_barcode:
+                stop(f"Shopify did not confirm barcode update for {item['id']}")
         print(f"Auto-filled identifiers for {len(pending)} variants in: {product['title']}")
 
     if last_number != int(state.get("last_barcode_number", 0)):
