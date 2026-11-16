@@ -74,5 +74,42 @@ class PublicationTests(unittest.TestCase):
         self.run_main("schedule", "45 * * * *", "2026-10-22", False)
 
 
+    def test_new_publication_preserves_historical_archives(self):
+        source = {
+            "products": {"nodes": [{
+                "title": "Belt", "vendor": "Covart",
+                "variants": {"nodes": [{
+                    "sku": "B1", "barcode": "COV0000001",
+                    "price": "60", "compareAtPrice": None,
+                    "availableForSale": True, "anchor": {"value": "60"}
+                }]}
+            }]},
+            "workshop": {"nodes": []},
+            "service": {"nodes": [{
+                "active": {"value": "true"}, "name": {"value": "Delivery"},
+                "current": {"value": "8"}, "anchor": {"value": "8"}
+            }]},
+        }
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            archive = root / "archive"
+            historical = archive / "2026-09-25" / "old.csv"
+            historical.parent.mkdir(parents=True)
+            historical.write_text("previous valid cjenik", encoding="utf-8")
+            with patch.multiple(mod, ROOT=root, CURRENT=root / "current",
+                                ARCHIVE=archive, STATE_FILE=root / "state.json",
+                                EVENT_NAME="push", SCHEDULE_CRON=""), \
+                 patch.object(mod, "ensure_identifiers"), \
+                 patch.object(mod, "load_state", return_value={
+                     "last_sequence": 38, "last_barcode_number": 117
+                 }), \
+                 patch.object(mod, "current_rows_match", return_value=False), \
+                 patch.object(mod, "graphql", return_value=source):
+                mod.main()
+            self.assertTrue(historical.exists())
+            self.assertEqual(historical.read_text(encoding="utf-8"),
+                             "previous valid cjenik")
+
+
 if __name__ == "__main__":
     unittest.main()
