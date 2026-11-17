@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   # Verify identifier automation whenever publication code is updated.
   push:
+    # Only main may publish. PRs execute the separate read-only verify job.
     branches: [main]
     paths:
       - "scripts/generate_price_lists.py"
