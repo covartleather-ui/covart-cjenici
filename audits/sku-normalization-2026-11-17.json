@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-17",
+  "purpose": "One-time unique SKU normalization for active Covart variants; preserve historical SKU mapping. No price/barcode updates.",
+  "source": "Shopify Admin variants before update",
+  "oldSkuRetained": [
+    {
+      "sku": "ETU-CRN",
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404742996294"
+    },
+    {
+      "sku": "ETU-SME",
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404739850566"
+    },
+    {
+      "sku": "OPA-POV-KLA-NAT-XXL",
+      "productId": "gid://shopify/Product/15696000123206",
+      "variantId": "gid://shopify/ProductVariant/57192883650886"
+    },
+    {
+      "sku": "OPA-POV-PRM-CRN-XL",
+      "productId": "gid://shopify/Product/15701487092038",
+      "variantId": "gid://shopify/ProductVariant/57360895279430"
+    },
+    {
+      "sku": "OPA-POV-PRM-CRN-XXL",
+      "productId": "gid://shopify/Product/15701487092038",
+      "variantId": "gid://shopify/ProductVariant/57217745944902"
+    },
+    {
+      "sku": "OPA-POV-PRM-XXL",
+      "productId": "gid://shopify/Product/15692280660294",
+      "variantId": "gid://shopify/ProductVariant/57178551189830"
+    },
+    {
+      "sku": "REM-DRA-40",
+      "productId": "gid://shopify/Product/15058720358726",
+      "variantId": "gid://shopify/ProductVariant/55591907393862"
+    },
+    {
+      "sku": "REM-XYR-34-3XL",
+      "productId": "gid://shopify/Product/15427235086662",
+      "variantId": "gid://shopify/ProductVariant/55994227949894"
+    },
+    {
+      "sku": "REM-XYR-40-L",
+      "productId": "gid://shopify/Product/15404197609798",
+      "variantId": "gid://shopify/ProductVariant/55909782683974"
+    },
+    {
+      "sku": "REM-XYR-40-M",
+      "productId": "gid://shopify/Product/15404197609798",
+      "variantId": "gid://shopify/ProductVariant/55909782651206"
+    },
+    {
+      "sku": "REM-XYR-M",
+      "productId": "gid://shopify/Product/15322260570438",
+      "variantId": "gid://shopify/ProductVariant/55700014170438"
+    },
+    {
+      "sku": "REM-ZER-40",
+      "productId": "gid://shopify/Product/15059247563078",
+      "variantId": "gid://shopify/ProductVariant/54718061150534"
+    }
+  ],
+  "changes": [
+    {
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404743061830",
+      "productTitle": "Kožni etui za ključeve",
+      "variantTitle": "D",
+      "oldSku": "ETU-CRN",
+      "newSku": "ETU-CRN-V02",
+      "priceAtReview": "14.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404743094598",
+      "productTitle": "Kožni etui za ključeve",
+      "variantTitle": "E",
+      "oldSku": "ETU-SME",
+      "newSku": "ETU-SME-V02",
+      "priceAtReview": "14.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404743127366",
+      "productTitle": "Kožni etui za ključeve",
+      "variantTitle": "F",
+      "oldSku": "ETU-SME",
+      "newSku": "ETU-SME-V03",
+      "priceAtReview": "14.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404743160134",
+      "productTitle": "Kožni etui za ključeve",
+      "variantTitle": "G",
+      "oldSku": "ETU-SME",
+      "newSku": "ETU-SME-V04",
+      "priceAtReview": "14.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15528189722950",
+      "variantId": "gid://shopify/ProductVariant/56404743225670",
+      "productTitle": "Kožni etui za ključeve",
+      "variantTitle": "I",
+      "oldSku": "ETU-SME",
+      "newSku": "ETU-SME-V05",
+      "priceAtReview": "14.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15696000123206",
+      "variantId": "gid://shopify/ProductVariant/57217909162310",
+      "productTitle": "Replika povijesnog opasača Natur s dvije gajke - Classic",
+      "variantTitle": "XXL 130 cm duljina remena, za opseg struka 81-118 cm / Bez gajki",
+      "oldSku": "OPA-POV-KLA-NAT-XXL",
+      "newSku": "OPA-POV-KLA-NAT-XXL-V02",
+      "priceAtReview": "60.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15701487092038",
+      "variantId": "gid://shopify/ProductVariant/57360895312198",
+      "productTitle": "Replika povijesnog opasača crni - PREMIUM",
+      "variantTitle": "XL 125 cm duljina remena, za opseg struka 77-114 cm / S gajkama",
+      "oldSku": "OPA-POV-PRM-CRN-XL",
+      "newSku": "OPA-POV-PRM-CRN-XL-V02",
+      "priceAtReview": "109.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15701487092038",
+      "variantId": "gid://shopify/ProductVariant/57217899626822",
+      "productTitle": "Replika povijesnog opasača crni - PREMIUM",
+      "variantTitle": "XXL 130 cm duljina remena, za opseg struka 81-118 cm / S gajkama",
+      "oldSku": "OPA-POV-PRM-CRN-XXL",
+      "newSku": "OPA-POV-PRM-CRN-XXL-V02",
+      "priceAtReview": "109.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15692280660294",
+      "variantId": "gid://shopify/ProductVariant/57217923875142",
+      "productTitle": "Replika povijesnog opasača - PREMIUM",
+      "variantTitle": "XXL 130 cm duljina remena, za opseg struka 81-118 cm / Bez gajki",
+      "oldSku": "OPA-POV-PRM-XXL",
+      "newSku": "OPA-POV-PRM-XXL-V02",
+      "priceAtReview": "99.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15295341920582",
+      "variantId": "gid://shopify/ProductVariant/55592061862214",
+      "productTitle": "Ručno šivani kožni remen Dravon 40",
+      "variantTitle": "Default Title",
+      "oldSku": "REM-DRA-40",
+      "newSku": "REM-DRA-40-V02",
+      "priceAtReview": "50.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15310268465478",
+      "variantId": "gid://shopify/ProductVariant/55646633263430",
+      "productTitle": "Ručno šivani kožni remen Dravon 40",
+      "variantTitle": "Default Title",
+      "oldSku": "REM-DRA-40",
+      "newSku": "REM-DRA-40-V03",
+      "priceAtReview": "55.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15427412492614",
+      "variantId": "gid://shopify/ProductVariant/55994588594502",
+      "productTitle": "Ručno izrađeni ženski kožni remen Xyrian 34",
+      "variantTitle": "XXXL 115(85-105)",
+      "oldSku": "REM-XYR-34-3XL",
+      "newSku": "REM-XYR-34-3XL-V02",
+      "priceAtReview": "63.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15404202754374",
+      "variantId": "gid://shopify/ProductVariant/55909821055302",
+      "productTitle": "Ručno šivani kožni remeni Xyrian 40",
+      "variantTitle": "L 120(95-110)",
+      "oldSku": "REM-XYR-40-L",
+      "newSku": "REM-XYR-40-L-V02",
+      "priceAtReview": "68.39"
+    },
+    {
+      "productId": "gid://shopify/Product/15404200558918",
+      "variantId": "gid://shopify/ProductVariant/55909805687110",
+      "productTitle": "Ručno šivani kožni remen Xyrian 40",
+      "variantTitle": "M 115(90-105)",
+      "oldSku": "REM-XYR-40-M",
+      "newSku": "REM-XYR-40-M-V02",
+      "priceAtReview": "82.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15325921739078",
+      "variantId": "gid://shopify/ProductVariant/55711909642566",
+      "productTitle": "Ručno šivani kožni remen Xyrian",
+      "variantTitle": "M (115/90-105)",
+      "oldSku": "REM-XYR-M",
+      "newSku": "REM-XYR-M-V02",
+      "priceAtReview": "85.00"
+    },
+    {
+      "productId": "gid://shopify/Product/15059247563078",
+      "variantId": "gid://shopify/ProductVariant/54718061183302",
+      "productTitle": "Ručno šivani kožni remen Zerath 40",
+      "variantTitle": "2",
+      "oldSku": "REM-ZER-40",
+      "newSku": "REM-ZER-40-V02",
+      "priceAtReview": "28.46"
+    },
+    {
+      "productId": "gid://shopify/Product/15295322751302",
+      "variantId": "gid://shopify/ProductVariant/55591973814598",
+      "productTitle": "Ručno šivani kožni remen Zerath 40",
+      "variantTitle": "Default Title",
+      "oldSku": "REM-ZER-40",
+      "newSku": "REM-ZER-40-V03",
+      "priceAtReview": "47.00"
+    }
+  ]
+}
