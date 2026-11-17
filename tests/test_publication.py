@@ -1,4 +1,4 @@
-"""Offline regression tests for change-only price-list publication."""
+"""Offline regression tests for change-only price-list publication and unique identifiers."""
 import csv
 import json
 import tempfile
@@ -13,6 +13,20 @@ import generate_price_lists as mod
 
 
 class PublicationTests(unittest.TestCase):
+    def test_duplicate_active_skus_are_rejected(self):
+        rows = [
+            {"naziv": "Remen A", "sifra": "REM-X"},
+            {"naziv": "Remen B", "sifra": "REM-X"},
+        ]
+        with self.assertRaises(SystemExit):
+            mod.verify_unique_product_skus(rows)
+
+    def test_distinct_active_skus_are_accepted(self):
+        mod.verify_unique_product_skus([
+            {"naziv": "Remen A", "sifra": "REM-X"},
+            {"naziv": "Remen B", "sifra": "REM-Y"},
+        ])
+
     def test_nn132_headers_and_names(self):
         self.assertEqual(mod.PRODUCT_HEADER, [
             "naziv", "sifra", "marka", "neto_kolicina", "jedinica_mjere",
