@@ -1,4 +1,5 @@
 name: Publish Covart price lists
+# Verify 2026-11-17 SKU normalization and generate fresh machine-readable listings.
 
 on:
   workflow_dispatch:
