@@ -1,4 +1,4 @@
-"""Offline regression tests for change-only price-list publication."""
+"""Offline regression tests for change-only price-list publication and unique identifiers."""
 import csv
 import json
 import tempfile
