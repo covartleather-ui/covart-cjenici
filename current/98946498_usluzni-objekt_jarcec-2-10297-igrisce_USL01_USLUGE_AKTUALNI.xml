@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_usluga trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000040" datum_vrijeme="2026-11-17T07:23:34+01:00" valuta="EUR" objekt="Uslužni objekt" oznaka_objekta="USL01">
+<cjenik_usluga trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000041" datum_vrijeme="2026-11-17T09:48:45+01:00" valuta="EUR" objekt="Uslužni objekt" oznaka_objekta="USL01">
   <usluga>
     <naziv_usluge>Zamjena kože remena</naziv_usluge>
     <maloprodajna_cijena>25.00</maloprodajna_cijena>

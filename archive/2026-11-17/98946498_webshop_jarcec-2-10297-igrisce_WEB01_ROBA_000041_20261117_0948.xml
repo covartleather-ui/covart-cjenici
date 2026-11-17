@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000040" datum_vrijeme="2026-11-17T07:23:34+01:00" valuta="EUR" objekt="Pokretni poslovni prostor" oznaka_objekta="PPP01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000041" datum_vrijeme="2026-11-17T09:48:45+01:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -86,7 +86,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Zerath 40</naziv>
-    <sifra>REM-ZER-40</sifra>
+    <sifra>REM-ZER-40-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -296,7 +296,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Zerath 40</naziv>
-    <sifra>REM-ZER-40</sifra>
+    <sifra>REM-ZER-40-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -310,7 +310,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon 40</naziv>
-    <sifra>REM-DRA-40</sifra>
+    <sifra>REM-DRA-40-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -352,7 +352,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon 40</naziv>
-    <sifra>REM-DRA-40</sifra>
+    <sifra>REM-DRA-40-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -408,7 +408,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Xyrian</naziv>
-    <sifra>REM-XYR-M</sifra>
+    <sifra>REM-XYR-M-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -450,7 +450,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Xyrian 40</naziv>
-    <sifra>REM-XYR-40-M</sifra>
+    <sifra>REM-XYR-40-M-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -464,7 +464,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remeni Xyrian 40</naziv>
-    <sifra>REM-XYR-40-L</sifra>
+    <sifra>REM-XYR-40-L-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -562,7 +562,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno izrađeni ženski kožni remen Xyrian 34</naziv>
-    <sifra>REM-XYR-34-3XL</sifra>
+    <sifra>REM-XYR-34-3XL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -786,7 +786,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-CRN</sifra>
+    <sifra>ETU-CRN-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -800,7 +800,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -814,7 +814,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -828,7 +828,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V04</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -842,7 +842,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V05</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1052,7 +1052,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-XXL</sifra>
+    <sifra>OPA-POV-PRM-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1136,7 +1136,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača Natur s dvije gajke - Classic</naziv>
-    <sifra>OPA-POV-KLA-NAT-XXL</sifra>
+    <sifra>OPA-POV-KLA-NAT-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1234,7 +1234,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača crni - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-CRN-XXL</sifra>
+    <sifra>OPA-POV-PRM-CRN-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1262,7 +1262,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača crni - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-CRN-XL</sifra>
+    <sifra>OPA-POV-PRM-CRN-XL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1553,299 +1553,5 @@
     <barkod>COV0000129</barkod>
     <ean_barkod />
     <bazna_cijena>50.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna pregača - Osnovna</naziv>
-    <sifra>APR-LGT</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>130.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>130.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000096</barkod>
-    <ean_barkod />
-    <bazna_cijena>130.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Držak za remen jednostavni</naziv>
-    <sifra>DRZ-JED</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>5.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>5.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000097</barkod>
-    <ean_barkod />
-    <bazna_cijena>5.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Akrilna pločica – izrada i graviranje 17,8 × 12,3 cm + set za montažu</naziv>
-    <sifra>GRV-PLK-MON</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>23.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>23.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000098</barkod>
-    <ean_barkod />
-    <bazna_cijena>23.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Akrilna pločica – izrada i graviranje 17,8 × 12,3 cm</naziv>
-    <sifra>GRV-PLK</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>18.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>18.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000099</barkod>
-    <ean_barkod />
-    <bazna_cijena>18.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna pregača - Varioc</naziv>
-    <sifra>APR-VAR</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>240.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>240.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000100</barkod>
-    <ean_barkod />
-    <bazna_cijena>240.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna pregača - Kovačka</naziv>
-    <sifra>APR-HMR</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>260.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>260.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000101</barkod>
-    <ean_barkod />
-    <bazna_cijena>260.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Podlošci za čaše - set 6 kom</naziv>
-    <sifra>GRV-POD-6</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>set</jedinica_mjere>
-    <maloprodajna_cijena>4.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>4.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000102</barkod>
-    <ean_barkod />
-    <bazna_cijena>4.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Radni remen 40 Classic</naziv>
-    <sifra>REM-XYR-RAD-40</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>65.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>65.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000103</barkod>
-    <ean_barkod />
-    <bazna_cijena>65.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Privjesak standard</naziv>
-    <sifra>DOD-PRI-STA</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>7.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>7.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000104</barkod>
-    <ean_barkod />
-    <bazna_cijena>7.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Privjesak s gravurom</naziv>
-    <sifra>DOD-PRI-GRV</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>10.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>10.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000105</barkod>
-    <ean_barkod />
-    <bazna_cijena>10.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Privjesak premium</naziv>
-    <sifra>DOD-PRI-PRM</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>16.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>16.00</cijena_za_jedinicu_mjere>
-    <barkod>COV0000106</barkod>
-    <ean_barkod />
-    <bazna_cijena>16.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Standard, 0,5 – 1,4 cm</naziv>
-    <sifra>TRK-STD-05-14</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>3.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>3.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-STD-05-14</barkod>
-    <ean_barkod />
-    <bazna_cijena>3.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Premium, 0,5 – 1,4 cm</naziv>
-    <sifra>TRK-PRE-05-14</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>6.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>6.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-PRE-05-14</barkod>
-    <ean_barkod />
-    <bazna_cijena>6.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Standard, 1,5 – 2,4 cm</naziv>
-    <sifra>TRK-STD-15-24</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>6.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>6.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-STD-15-24</barkod>
-    <ean_barkod />
-    <bazna_cijena>6.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Premium, 1,5 – 2,4 cm</naziv>
-    <sifra>TRK-PRE-15-24</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>9.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>9.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-PRE-15-24</barkod>
-    <ean_barkod />
-    <bazna_cijena>9.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Standard, 2,5 – 3,4 cm</naziv>
-    <sifra>TRK-STD-25-34</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>9.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>9.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-STD-25-34</barkod>
-    <ean_barkod />
-    <bazna_cijena>9.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Premium, 2,5 – 3,4 cm</naziv>
-    <sifra>TRK-PRE-25-34</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>12.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>12.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-PRE-25-34</barkod>
-    <ean_barkod />
-    <bazna_cijena>12.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Standard, 3,5 – 4,4 cm</naziv>
-    <sifra>TRK-STD-35-44</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>12.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>12.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-STD-35-44</barkod>
-    <ean_barkod />
-    <bazna_cijena>12.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Premium, 3,5 – 4,4 cm</naziv>
-    <sifra>TRK-PRE-35-44</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>15.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>15.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-PRE-35-44</barkod>
-    <ean_barkod />
-    <bazna_cijena>15.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Standard, 4,5 – 5,0 cm</naziv>
-    <sifra>TRK-STD-45-50</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>15.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>15.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-STD-45-50</barkod>
-    <ean_barkod />
-    <bazna_cijena>15.00</bazna_cijena>
-  </proizvod>
-  <proizvod>
-    <naziv>Kožna traka Premium, 4,5 – 5,0 cm</naziv>
-    <sifra>TRK-PRE-45-50</sifra>
-    <marka>Covart</marka>
-    <neto_kolicina />
-    <jedinica_mjere>kom</jedinica_mjere>
-    <maloprodajna_cijena>18.00</maloprodajna_cijena>
-    <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
-    <naziv_posebnog_oblika_prodaje />
-    <cijena_za_jedinicu_mjere>18.00</cijena_za_jedinicu_mjere>
-    <barkod>TRK-PRE-45-50</barkod>
-    <ean_barkod />
-    <bazna_cijena>18.00</bazna_cijena>
   </proizvod>
 </cjenik_proizvoda>

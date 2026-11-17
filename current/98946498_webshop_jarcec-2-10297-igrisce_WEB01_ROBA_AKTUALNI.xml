@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000040" datum_vrijeme="2026-11-17T07:23:34+01:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
+<cjenik_proizvoda trgovac="Covart, obrt za proizvodnju i usluge" matični_broj_obrta="98946498" adresa="Jarčec 2, 10297 Igrišće" broj_pohrane="000041" datum_vrijeme="2026-11-17T09:48:45+01:00" valuta="EUR" objekt="Webshop" oznaka_objekta="WEB01">
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon</naziv>
     <sifra>REM-DRA-40-CRN-XL</sifra>
@@ -86,7 +86,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Zerath 40</naziv>
-    <sifra>REM-ZER-40</sifra>
+    <sifra>REM-ZER-40-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -296,7 +296,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Zerath 40</naziv>
-    <sifra>REM-ZER-40</sifra>
+    <sifra>REM-ZER-40-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -310,7 +310,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon 40</naziv>
-    <sifra>REM-DRA-40</sifra>
+    <sifra>REM-DRA-40-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -352,7 +352,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Dravon 40</naziv>
-    <sifra>REM-DRA-40</sifra>
+    <sifra>REM-DRA-40-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -408,7 +408,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Xyrian</naziv>
-    <sifra>REM-XYR-M</sifra>
+    <sifra>REM-XYR-M-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -450,7 +450,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remen Xyrian 40</naziv>
-    <sifra>REM-XYR-40-M</sifra>
+    <sifra>REM-XYR-40-M-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -464,7 +464,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno šivani kožni remeni Xyrian 40</naziv>
-    <sifra>REM-XYR-40-L</sifra>
+    <sifra>REM-XYR-40-L-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -562,7 +562,7 @@
   </proizvod>
   <proizvod>
     <naziv>Ručno izrađeni ženski kožni remen Xyrian 34</naziv>
-    <sifra>REM-XYR-34-3XL</sifra>
+    <sifra>REM-XYR-34-3XL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -786,7 +786,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-CRN</sifra>
+    <sifra>ETU-CRN-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -800,7 +800,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -814,7 +814,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V03</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -828,7 +828,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V04</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -842,7 +842,7 @@
   </proizvod>
   <proizvod>
     <naziv>Kožni etui za ključeve</naziv>
-    <sifra>ETU-SME</sifra>
+    <sifra>ETU-SME-V05</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1052,7 +1052,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-XXL</sifra>
+    <sifra>OPA-POV-PRM-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1136,7 +1136,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača Natur s dvije gajke - Classic</naziv>
-    <sifra>OPA-POV-KLA-NAT-XXL</sifra>
+    <sifra>OPA-POV-KLA-NAT-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1234,7 +1234,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača crni - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-CRN-XXL</sifra>
+    <sifra>OPA-POV-PRM-CRN-XXL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
@@ -1262,7 +1262,7 @@
   </proizvod>
   <proizvod>
     <naziv>Replika povijesnog opasača crni - PREMIUM</naziv>
-    <sifra>OPA-POV-PRM-CRN-XL</sifra>
+    <sifra>OPA-POV-PRM-CRN-XL-V02</sifra>
     <marka>Covart</marka>
     <neto_kolicina />
     <jedinica_mjere>kom</jedinica_mjere>
