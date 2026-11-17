@@ -1,15 +1,25 @@
 {
   "merchant": "Covart, obrt za proizvodnju i usluge",
-  "published_at": "2026-11-16T07:21:24+01:00",
-  "storage_sequence": "000039",
+  "matični_broj_obrta": "98946498",
+  "format_version": "NN132_2026",
+  "published_at": "2026-11-17T07:23:34+01:00",
+  "storage_sequence": "000040",
   "currency": "EUR",
   "files": {
-    "webshop_csv": "current/webshop_jarcec-2-10297-igrisce_WEB01_000039_20261116-0721_proizvodi.csv",
-    "webshop_xml": "current/webshop_jarcec-2-10297-igrisce_WEB01_000039_20261116-0721_proizvodi.xml",
-    "workshop_csv": "current/pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_000039_20261116-0721_proizvodi.csv",
-    "workshop_xml": "current/pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_000039_20261116-0721_proizvodi.xml",
-    "services_csv": "current/usluzni-objekt_jarcec-2-10297-igrisce_USL01_000039_20261116-0721_usluge.csv",
-    "services_xml": "current/usluzni-objekt_jarcec-2-10297-igrisce_USL01_000039_20261116-0721_usluge.xml"
+    "webshop_csv": "current/98946498_webshop_jarcec-2-10297-igrisce_WEB01_ROBA_000040_20261117_0723.csv",
+    "webshop_xml": "current/98946498_webshop_jarcec-2-10297-igrisce_WEB01_ROBA_000040_20261117_0723.xml",
+    "workshop_csv": "current/98946498_pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_ROBA_000040_20261117_0723.csv",
+    "workshop_xml": "current/98946498_pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_ROBA_000040_20261117_0723.xml",
+    "services_csv": "current/98946498_usluzni-objekt_jarcec-2-10297-igrisce_USL01_USLUGE_000040_20261117_0723.csv",
+    "services_xml": "current/98946498_usluzni-objekt_jarcec-2-10297-igrisce_USL01_USLUGE_000040_20261117_0723.xml"
+  },
+  "stable_files": {
+    "webshop_csv": "current/98946498_webshop_jarcec-2-10297-igrisce_WEB01_ROBA_AKTUALNI.csv",
+    "webshop_xml": "current/98946498_webshop_jarcec-2-10297-igrisce_WEB01_ROBA_AKTUALNI.xml",
+    "workshop_csv": "current/98946498_pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_ROBA_AKTUALNI.csv",
+    "workshop_xml": "current/98946498_pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_ROBA_AKTUALNI.xml",
+    "services_csv": "current/98946498_usluzni-objekt_jarcec-2-10297-igrisce_USL01_USLUGE_AKTUALNI.csv",
+    "services_xml": "current/98946498_usluzni-objekt_jarcec-2-10297-igrisce_USL01_USLUGE_AKTUALNI.xml"
   },
   "counts": {
     "webshop_products": 111,
