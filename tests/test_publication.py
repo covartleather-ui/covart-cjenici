@@ -13,6 +13,42 @@ import generate_price_lists as mod
 
 
 class PublicationTests(unittest.TestCase):
+    def test_nn132_headers_and_names(self):
+        self.assertEqual(mod.PRODUCT_HEADER, [
+            "naziv", "sifra", "marka", "neto_kolicina", "jedinica_mjere",
+            "maloprodajna_cijena", "poseban_oblik_prodaje",
+            "naziv_posebnog_oblika_prodaje", "cijena_za_jedinicu_mjere",
+            "barkod", "ean_barkod", "bazna_cijena",
+        ])
+        self.assertEqual(mod.SERVICE_HEADER, [
+            "naziv_usluge", "maloprodajna_cijena", "poseban_oblik_prodaje",
+            "naziv_posebnog_oblika_prodaje", "bazna_cijena",
+        ])
+        names = mod.publication_file_names("000040", "20261117_0745")
+        self.assertEqual(len(names), 6)
+        for name in names.values():
+            self.assertTrue(name.startswith(mod.COVART_MBO + "_"))
+            self.assertIn("jarcec-2-10297-igrisce", name)
+            self.assertIn("_000040_20261117_0745.", name)
+            self.assertTrue(name.endswith((".csv", ".xml")))
+        for name in mod.STABLE_NAMES.values():
+            self.assertTrue(name.startswith(mod.COVART_MBO + "_"))
+            self.assertIn("_AKTUALNI.", name)
+
+    def test_csv_is_utf8_without_bom_and_semicolon_separated(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "cjenik.csv"
+            mod.write_csv(path, mod.SERVICE_HEADER, [{
+                "naziv_usluge": "Šivanje", "maloprodajna_cijena": "9.00",
+                "poseban_oblik_prodaje": "NE",
+                "naziv_posebnog_oblika_prodaje": "",
+                "bazna_cijena": "9.00",
+            }])
+            raw = path.read_bytes()
+            self.assertFalse(raw.startswith(bytes([0xEF, 0xBB, 0xBF])))
+            self.assertIn("Šivanje", raw.decode("utf-8"))
+            self.assertIn(b";", raw)
+
     def test_reordering_is_not_a_change_but_duplicates_and_values_are(self):
         rows = [{"name": "A", "price": "10"}, {"name": "B", "price": "20"}]
         with tempfile.TemporaryDirectory() as folder:
@@ -20,7 +56,8 @@ class PublicationTests(unittest.TestCase):
             current = root / "current"
             current.mkdir()
             (current / "manifest.json").write_text(json.dumps({
-                "files": {"webshop_csv": "current/products.csv"}
+                "files": {"webshop_csv": "current/products.csv"},
+                "format_version": mod.FORMAT_VERSION
             }))
             with (current / "products.csv").open("w", newline="") as stream:
                 writer = csv.DictWriter(stream, fieldnames=["name", "price"], delimiter=";")
@@ -109,6 +146,24 @@ class PublicationTests(unittest.TestCase):
             self.assertTrue(historical.exists())
             self.assertEqual(historical.read_text(encoding="utf-8"),
                              "previous valid cjenik")
+            manifest = json.loads((root / "current" / "manifest.json").read_text())
+            self.assertEqual(manifest["format_version"], "NN132_2026")
+            self.assertEqual(len(manifest["stable_files"]), 6)
+            for key, path in manifest["stable_files"].items():
+                stable = root / path
+                canonical = root / manifest["files"][key]
+                self.assertTrue(stable.exists())
+                self.assertEqual(stable.read_bytes(), canonical.read_bytes())
+            with (root / manifest["files"]["webshop_csv"]).open(
+                encoding="utf-8", newline=""
+            ) as stream:
+                reader = csv.DictReader(stream, delimiter=";")
+                self.assertEqual(reader.fieldnames, mod.PRODUCT_HEADER)
+                rows = list(reader)
+            self.assertEqual(rows[0]["bazna_cijena"], "60.00")
+            self.assertEqual(rows[0]["ean_barkod"], "")
+            self.assertNotIn("dostupnost", rows[0])
+
 
 
 if __name__ == "__main__":

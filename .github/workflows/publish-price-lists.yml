@@ -4,6 +4,12 @@ on:
   workflow_dispatch:
   # Verify identifier automation whenever publication code is updated.
   push:
+    branches: [main]
+    paths:
+      - "scripts/generate_price_lists.py"
+      - "tests/**"
+      - ".github/workflows/publish-price-lists.yml"
+  pull_request:
     paths:
       - "scripts/generate_price_lists.py"
       - "tests/**"
@@ -15,6 +21,9 @@ on:
     # Reserve daily publication at 07:35 Europe/Zagreb if the primary run is missed.
     - cron: "35 5 * * *"
     - cron: "35 6 * * *"
+    # Last routine check before the statutory 11:00 publication deadline.
+    - cron: "50 8 * * *"
+    - cron: "50 9 * * *"
 
 permissions:
   contents: write
@@ -24,7 +33,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Pull requests must never publish cjenici or edit historical archives.
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run regression tests
+        run: python3 -m unittest discover -s tests -v
+
   publish:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -36,6 +56,7 @@ jobs:
       - name: Generate and validate price lists
         env:
           SHOPIFY_SHOP: 6ffdpq-40.myshopify.com
+          COVART_MBO: "98946498"
           SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
           SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
           SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}

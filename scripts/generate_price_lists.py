@@ -27,15 +27,42 @@ API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2026-07")
 EVENT_NAME = os.environ.get("GITHUB_EVENT_NAME", "")
 SCHEDULE_CRON = os.environ.get("SCHEDULE_CRON", "")
 
+# NN 132/2026, article 3: preserve statutory order; optional fields may be empty.
+COVART_MBO = os.environ.get("COVART_MBO", "98946498").strip()
+ADDRESS_SLUG = "jarcec-2-10297-igrisce"
+FORMAT_VERSION = "NN132_2026"
 PRODUCT_HEADER = [
-    "naziv", "sifra", "marka", "jedinica_mjere", "cijena_za_jedinicu_mjere",
+    "naziv", "sifra", "marka", "neto_kolicina", "jedinica_mjere",
     "maloprodajna_cijena", "poseban_oblik_prodaje",
-    "naziv_posebnog_oblika_prodaje", "sidrena_cijena", "barkod", "dostupnost",
+    "naziv_posebnog_oblika_prodaje", "cijena_za_jedinicu_mjere",
+    "barkod", "ean_barkod", "bazna_cijena",
 ]
 SERVICE_HEADER = [
     "naziv_usluge", "maloprodajna_cijena", "poseban_oblik_prodaje",
-    "naziv_posebnog_oblika_prodaje", "sidrena_cijena",
+    "naziv_posebnog_oblika_prodaje", "bazna_cijena",
 ]
+
+# Immutable, regulation-named files are also mirrored under these stable paths.
+# The stable paths guarantee an unchanged URL whenever the price list changes.
+# The canonical names include the publication sequence and timestamp.
+STABLE_NAMES = {
+    "webshop_csv": f"{COVART_MBO}_webshop_{ADDRESS_SLUG}_WEB01_ROBA_AKTUALNI.csv",
+    "webshop_xml": f"{COVART_MBO}_webshop_{ADDRESS_SLUG}_WEB01_ROBA_AKTUALNI.xml",
+    "workshop_csv": f"{COVART_MBO}_pokretni-poslovni-prostor_{ADDRESS_SLUG}_PPP01_ROBA_AKTUALNI.csv",
+    "workshop_xml": f"{COVART_MBO}_pokretni-poslovni-prostor_{ADDRESS_SLUG}_PPP01_ROBA_AKTUALNI.xml",
+    "services_csv": f"{COVART_MBO}_usluzni-objekt_{ADDRESS_SLUG}_USL01_USLUGE_AKTUALNI.csv",
+    "services_xml": f"{COVART_MBO}_usluzni-objekt_{ADDRESS_SLUG}_USL01_USLUGE_AKTUALNI.xml",
+}
+
+
+def publication_file_names(sequence, stamp):
+    if not (COVART_MBO.isdigit() and len(COVART_MBO) == 8):
+        stop("Matični broj obrta mora imati 8 znamenaka")
+    return {
+        key: name.replace("_AKTUALNI.", f"_{sequence}_{stamp}.")
+        for key, name in STABLE_NAMES.items()
+    }
+
 
 QUERY = r"""
 query CovartPriceLists {
@@ -50,6 +77,8 @@ query CovartPriceLists {
           price
           compareAtPrice
           availableForSale
+          net: metafield(namespace: "custom", key: "net_quantity") { value }
+          ean: metafield(namespace: "custom", key: "ean_barcode") { value }
           anchor: metafield(namespace: "custom", key: "anchor_price") { value }
         }
       }
@@ -76,6 +105,8 @@ query CovartPriceLists {
       special: field(key: "special_sale") { value }
       specialName: field(key: "special_sale_name") { value }
       barcode: field(key: "barcode") { value }
+      ean: field(key: "ean_barcode") { value }
+      net: field(key: "net_quantity") { value }
       availability: field(key: "availability") { value }
       active: field(key: "active") { value }
     }
@@ -205,7 +236,7 @@ def is_valid_schedule(now):
     if EVENT_NAME != "schedule" or SCHEDULE_CRON == "45 * * * *":
         return True
     offset = int(now.utcoffset().total_seconds() // 3600)
-    valid_hours = {2: {"5"}, 1: {"6"}}
+    valid_hours = {2: {"5", "8"}, 1: {"6", "9"}}
     cron_hour = SCHEDULE_CRON.split()[1] if len(SCHEDULE_CRON.split()) >= 2 else ""
     return cron_hour in valid_hours.get(offset, set())
 
@@ -216,7 +247,7 @@ def load_state():
 
 def write_csv(path, header, rows):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
+    with path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=header, delimiter=";", lineterminator="\r\n")
         writer.writeheader()
         writer.writerows(rows)
@@ -250,6 +281,8 @@ def validate_xml(path, item_name, expected_rows):
 def current_rows_match(datasets):
     try:
         manifest = json.loads((CURRENT / "manifest.json").read_text(encoding="utf-8"))
+        if manifest.get("format_version") != FORMAT_VERSION:
+            return False
         for key, expected in datasets.items():
             path = ROOT / manifest["files"][key]
             if path.parent != CURRENT:
@@ -411,14 +444,15 @@ def main():
                 "naziv": p["title"],
                 "sifra": v["sku"],
                 "marka": p.get("vendor") or "Covart",
+                "neto_kolicina": (v.get("net") or {}).get("value", ""),
                 "jedinica_mjere": "kom",
-                "cijena_za_jedinicu_mjere": dec(price),
                 "maloprodajna_cijena": dec(price),
                 "poseban_oblik_prodaje": "DA" if sale else "NE",
                 "naziv_posebnog_oblika_prodaje": "Sniženje" if sale else "",
-                "sidrena_cijena": dec(anchor),
+                "cijena_za_jedinicu_mjere": dec(price),
                 "barkod": v["barcode"],
-                "dostupnost": "DOSTUPNO" if v["availableForSale"] else "NEDOSTUPNO",
+                "ean_barkod": (v.get("ean") or {}).get("value", ""),
+                "bazna_cijena": dec(anchor),
             })
 
     workshop_only = []
@@ -439,14 +473,15 @@ def main():
             "naziv": required["name"],
             "sifra": required["sku"],
             "marka": required["brand"],
+            "neto_kolicina": field(n, "net"),
             "jedinica_mjere": required["unit"],
-            "cijena_za_jedinicu_mjere": dec(price),
             "maloprodajna_cijena": dec(price),
             "poseban_oblik_prodaje": "DA" if sale else "NE",
             "naziv_posebnog_oblika_prodaje": field(n, "specialName") if sale else "",
-            "sidrena_cijena": dec(anchor),
+            "cijena_za_jedinicu_mjere": dec(price),
             "barkod": required["barcode"],
-            "dostupnost": required["availability"],
+            "ean_barkod": field(n, "ean"),
+            "bazna_cijena": dec(anchor),
         })
 
     services = []
@@ -464,7 +499,7 @@ def main():
             "maloprodajna_cijena": dec(price),
             "poseban_oblik_prodaje": "DA" if sale else "NE",
             "naziv_posebnog_oblika_prodaje": field(n, "specialName") if sale else "",
-            "sidrena_cijena": dec(anchor),
+            "bazna_cijena": dec(anchor),
         })
 
     if not products or not services:
@@ -482,17 +517,11 @@ def main():
 
     sequence = int(state.get("last_sequence", 0)) + 1
     seq = f"{sequence:06d}"
-    stamp = now.strftime("%Y%m%d-%H%M")
     iso = now.isoformat(timespec="seconds")
 
-    names = {
-        "webshop_csv": f"webshop_jarcec-2-10297-igrisce_WEB01_{seq}_{stamp}_proizvodi.csv",
-        "webshop_xml": f"webshop_jarcec-2-10297-igrisce_WEB01_{seq}_{stamp}_proizvodi.xml",
-        "workshop_csv": f"pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_{seq}_{stamp}_proizvodi.csv",
-        "workshop_xml": f"pokretni-poslovni-prostor_jarcec-2-10297-igrisce_PPP01_{seq}_{stamp}_proizvodi.xml",
-        "services_csv": f"usluzni-objekt_jarcec-2-10297-igrisce_USL01_{seq}_{stamp}_usluge.csv",
-        "services_xml": f"usluzni-objekt_jarcec-2-10297-igrisce_USL01_{seq}_{stamp}_usluge.xml",
-    }
+    # Timestamp is local Croatia time (YYYYMMDD_HHMM) and is immutable in archives.
+    stamp = now.strftime("%Y%m%d_%H%M")
+    names = publication_file_names(seq, stamp)
 
     clean_current()
     day_archive = ARCHIVE / today
@@ -505,6 +534,7 @@ def main():
 
     common = {
         "trgovac": "Covart, obrt za proizvodnju i usluge",
+        "matični_broj_obrta": COVART_MBO,
         "adresa": "Jarčec 2, 10297 Igrišće",
         "broj_pohrane": seq,
         "datum_vrijeme": iso,
@@ -527,15 +557,23 @@ def main():
     validate_xml(current_paths["workshop_xml"], "proizvod", len(workshop))
     validate_xml(current_paths["services_xml"], "usluga", len(services))
 
+    # Current stable URL targets update atomically with each committed publication.
+    for key, stable_name in STABLE_NAMES.items():
+        shutil.copy2(current_paths[key], CURRENT / stable_name)
+
+    # Do not modify or remove past price-list publications.
     for p in current_paths.values():
         shutil.copy2(p, day_archive / p.name)
 
     manifest = {
         "merchant": "Covart, obrt za proizvodnju i usluge",
+        "matični_broj_obrta": COVART_MBO,
+        "format_version": FORMAT_VERSION,
         "published_at": iso,
         "storage_sequence": seq,
         "currency": "EUR",
         "files": {k: f"current/{v}" for k, v in names.items()},
+        "stable_files": {k: f"current/{v}" for k, v in STABLE_NAMES.items()},
         "counts": {
             "webshop_products": len(products),
             "workshop_products": len(workshop),
