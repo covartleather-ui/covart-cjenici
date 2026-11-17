@@ -45,7 +45,7 @@ class PublicationTests(unittest.TestCase):
                 "bazna_cijena": "9.00",
             }])
             raw = path.read_bytes()
-            self.assertFalse(raw.startswith(b"\\xef\\xbb\\xbf"))
+            self.assertFalse(raw.startswith(bytes([0xEF, 0xBB, 0xBF])))
             self.assertIn("Šivanje", raw.decode("utf-8"))
             self.assertIn(b";", raw)
 
@@ -149,8 +149,11 @@ class PublicationTests(unittest.TestCase):
             manifest = json.loads((root / "current" / "manifest.json").read_text())
             self.assertEqual(manifest["format_version"], "NN132_2026")
             self.assertEqual(len(manifest["stable_files"]), 6)
-            for path in manifest["stable_files"].values():
-                self.assertTrue((root / path).exists())
+            for key, path in manifest["stable_files"].items():
+                stable = root / path
+                canonical = root / manifest["files"][key]
+                self.assertTrue(stable.exists())
+                self.assertEqual(stable.read_bytes(), canonical.read_bytes())
             with (root / manifest["files"]["webshop_csv"]).open(
                 encoding="utf-8", newline=""
             ) as stream:
