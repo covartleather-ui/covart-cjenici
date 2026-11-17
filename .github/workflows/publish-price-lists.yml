@@ -4,6 +4,12 @@ on:
   workflow_dispatch:
   # Verify identifier automation whenever publication code is updated.
   push:
+    branches: [main]
+    paths:
+      - "scripts/generate_price_lists.py"
+      - "tests/**"
+      - ".github/workflows/publish-price-lists.yml"
+  pull_request:
     paths:
       - "scripts/generate_price_lists.py"
       - "tests/**"
@@ -27,7 +33,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Pull requests must never publish cjenici or edit historical archives.
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run regression tests
+        run: python3 -m unittest discover -s tests -v
+
   publish:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
