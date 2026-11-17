@@ -421,6 +421,21 @@ def ensure_identifiers(state):
           f"{sum(len(items) for _, items in updates)} updated variants")
 
 
+def verify_unique_product_skus(products):
+    """Prevent ambiguous machine-readable listings when SKUs overlap."""
+    used = {}
+    for row in products:
+        sku = row.get("sifra", "").strip()
+        if not sku:
+            stop("Active product has no SKU in price list")
+        if sku in used:
+            stop(
+                f"Duplicate active product SKU {sku!r} on '{row['naziv']}' "
+                f"and '{used[sku]}'. Assign a distinct SKU in Shopify."
+            )
+        used[sku] = row["naziv"]
+
+
 def main():
     now = datetime.now(TZ)
     if not is_valid_schedule(now):
@@ -454,6 +469,9 @@ def main():
                 "ean_barkod": (v.get("ean") or {}).get("value", ""),
                 "bazna_cijena": dec(anchor),
             })
+
+    # Every active product variant must be uniquely identifiable in machine data.
+    verify_unique_product_skus(products)
 
     workshop_only = []
     for n in data["workshop"]["nodes"]:
